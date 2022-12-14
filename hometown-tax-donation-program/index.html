@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000861">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+        <!-----------------------------------header---------------------------------------------->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/loading.js"></script>
+        <script type="text/javascript" src="../js/leap_button.js"></script>
+        <link rel="shortcut icon" href="../img/icon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet"> 
+    <style>
+      *{font-family: 'Noto Serif JP', serif !important;}
+    </style>
+    <title>ふるさとひょうご寄付金</title>
+</head>
+<body>
+     	<!-------------------------shutter animation---------------------------------->
+       <div id="loader" class="shutter_1">
+        <main>
+          <div class="dank-ass-loader">
+             <div class="row">
+              <div class="arrow up outer outer-18"></div>
+              <div class="arrow down outer outer-17"></div>
+              <div class="arrow up outer outer-16"></div>
+              <div class="arrow down outer outer-15"></div>
+              <div class="arrow up outer outer-14"></div>
+             </div>
+             <div class="row">
+              <div class="arrow up outer outer-1"></div>
+              <div class="arrow down outer outer-2"></div>
+              <div class="arrow up inner inner-6"></div>
+              <div class="arrow down inner inner-5"></div>
+              <div class="arrow up inner inner-4"></div>
+              <div class="arrow down outer outer-13"></div>
+              <div class="arrow up outer outer-12"></div>
+             </div>
+             <div class="row">
+              <div class="arrow down outer outer-3"></div>
+              <div class="arrow up outer outer-4"></div>
+              <div class="arrow down inner inner-1"></div>
+              <div class="arrow up inner inner-2"></div>
+              <div class="arrow down inner inner-3"></div>
+              <div class="arrow up outer outer-11"></div>
+              <div class="arrow down outer outer-10"></div>
+             </div>
+             <div class="row">
+              <div class="arrow down outer outer-5"></div>
+              <div class="arrow up outer outer-6"></div>
+              <div class="arrow down outer outer-7"></div>
+              <div class="arrow up outer outer-8"></div>
+              <div class="arrow down outer outer-9"></div>
+             </div>
+          </div>
+        </main>
+          </div>
+    <!------------------------------------------------------------------------------>
+              <!-------------------------Pageleap animation---------------------------------->
+              <div id="page_top">
+                <a id="leap_a" href="#">
+                    <div class="fluid"></div>
+                </a>
+              </div>
+              <!--------------------------------header--------------------------------------->
+              <header>
+                <div class="header">
+                  <div class="border PC">
+                  <div class="width PC">
+                    <div class="header__flex PC">
+                      <a class="PC" href="../index.html">
+                        <img alt="No Image" id="logo" src="../img/navbar_logo.png">
+                      </a>
+                        <nav class="PC">
+                          <ul class="PC">
+                            <a class="a_header PC" href="../communication/index.html#grade3">
+                              <div_hamburger class="a_PC PC"><li class="PC">受験生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#student">
+                              <div_hamburger class="a_PC PC"><li class="PC">在校生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#graduate">
+                              <div_hamburger class="a_PC PC"><li class="PC">卒業生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#parent">
+                              <div_hamburger class="a_PC PC"><li class="PC">保護者</li></div_hamburger>
+                            </a>
+                            <a class="PC"  href="http://www.pure.ne.jp/~seirei/">
+                              <div_hamburger class="a_PC PC"><li class="PC">蜻蛉会</li></div_hamburger>
+                            </a>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="width PC">
+                      <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                          <nav class="PC">
+                            <ul class="PC">
+                              <a class="a_header PC" href="../introduction/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">学校紹介</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../cafeteria/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">食堂営業</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../library/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">図書館</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../club-activity/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">部活動</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../path/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">進路実績</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC"  href="../communication/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">事務連絡</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../archive/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">蜻蛉の軌跡</li></div_hamburger>
+                              </a>
+                            </ul>
+                          </nav>
+                      </div> <!--------------------------------------------display none------------------------->
+                      <div class="header_animation_indent"></div>
+                </div>
+                <!-------------------------------------hamburger ect...----------------------------------------------------------->
+                <a class="mobile logo_mobile" href="./PC.html">
+                  <img alt="No Image" class="mobile logo_mobile" src="../img/navbar_logo.png">
+                </a>
+                  <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+                  <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+                  <nav class="nav_mobile mobile">
+                    <ul class="pt-5 ul_mobile">
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#grade3">受験生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#student">在校生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#graduate">卒業生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#parent">保護者</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../introduction/index.html">学校紹介</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../cafeteria/index.html">食堂営業</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../library/index.html">図書館</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../club-activity/index.html">部活動</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../path/index.html">進路実績</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html">事務連絡</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../archive/index.html">蜻蛉の軌跡</a></li>
+                    </ul>
+                  </nav>
+            </header>
+    <!-----------------------------------main-------------------------------------->
+    <div class="top">
+        <div id="title"></div>
+    </div>
+    <h1 class="sub-title">ふるさとひょうご<span>寄付金とは</span></h1>
+    <p class="content">
+      平成２８年４月から「ふるさとひょうご寄附金」の応援メニューとして「県立学校環境充実応援プロジェクト」が設定され、県立学校への寄附金が、学校機能向上や教育環境の充 実等に充てることができるようになりました。
+      つきましては、下記のとおり本校においても寄附による事業を実施したいと思います。皆様のご支援・ご協力をお願い申し上げます。
+    </p>
+    <h3 class="caution">以下のことにご注意ください</h3>
+    <p class="content">
+      ふるさと納税の偽サイトにご注意ください。振り込め詐欺にご注意を！
+      本校では、電話等による寄附の勧誘や働きかけを一切行っておりません。
+      この寄附制度は、皆さんの「小野高校を応援したい！」という善意を形にするための取り組みです。
+      「ふるさと納税」をかたった振り込め詐欺などには十分ご注 意ください。
+    </p>
+    <h1 class="sub-title">小野高校のプロジェクト内容</h1>
+    <h2 class="sub-sub-title">寄附金の活用事業</h2>
+    <p class="content-center">
+      「生み出せ新たな小野高プライド」
+      （生徒の進路目標の実現をサポート）
+    </p>
+    <h2 class="sub-sub-title">寄附金の活用事業</h2>
+    <p class="content">
+      ①　科学技術にイノベーションを創出する独創性と北播磨から世界に飛び出すフロンティア精神を持つ人材育成のために実験室に最先端 の機器を整備する。
+    </p>
+    <p class="content">
+      ②　充実したICT教育環境や高度な教育機材の整備によって、教育の質の向上を目指し、生徒の進路目標を実現する。
+    </p>
+    <div class="img_div">
+      <img alt="No Image" id="Outline_img_middle" src="./img/portfolio-example-001.webp">
+    </div>
+    <h2 class="sub-sub-title">寄附金充当経費</h2>
+    <p class="content-middle-left">
+      ①　高度・高額な実験実習機器や教材及び活用実践プログラム
+    </p>
+    <p class="content-middle-left">
+      ②　ICT教育機器及び活用ソフト
+    </p>
+    <h2 class="sub-sub-title">目標額　1,000 万円</h2>
+    <h1 class="sub-title">寄付していただく手順</h1>
+    <h3 class="caution"> 	
+        (1) 申出書・申請書等をダウンロードしてください。
+    </h3>
+    <div class="div-url">
+        <a href="./documents/R4_kifumousidesyo.docx" class="url">寄附申出書(Word版: 40KB)</a>
+        <br>
+        <a href="./documents/R4_kifumousidesyo.pdf" class="url">寄附申出書(PDF版: 249KB)</a>
+    </div>
+    <h3 class="caution"> 	
+        (2) 申出書・申請書等を本校に送付してください。
+    </h3>
+    <p class="content">
+       ふるさと納税ﾜﾝｽﾄｯﾌﾟ特別制度を利用される方は「ﾜﾝｽﾄｯﾌﾟ特別制度申請書」及び添付書類も併せて送付してください。
+       持参・郵送・ＦＡＸ・電子メールいずれも可能です。
+    </p>
+    <p class="content center"><span>〒675-1375　</span><span>　小野市西本町518</span></p>
+    <p class="content center">Tel 0794-(63)-2007 (小野高校 事務室)</p>
+    <p class="content center">Fax 0794-(83)-2008 (小野高校 事務室)</p>
+    <p class="content center">E-mail ono_hs@pref.hyogo.lg.jp</p>
+    <h3 class="caution">
+        (3) ご希望された納付方法により、後日郵送、E-mail等で納入方法をご案内します。
+    </h3>
+    <p class="content">
+        クレジットカード払い・マルチペイメント払いは下記ふるさと納税サイトからお申込み・お手続きください。
+    </p>
+    <div class="div-url">
+        <a href="https://www.furusato-tax.jp/city/product/28000" class="url">ふるさとチョイス 寄附額2千円以上から)</a>
+        <br>
+        <a href="https://www.rakuten.co.jp/f280003-hyogo/" class="url">楽天ふるさと納税 (寄附額2千円以上から)</a>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">関心・意欲の向上</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai01.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal01">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">リスニング力の向上</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai02.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal02">Read More</a></p>
+                  </div> 
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">授業の質の向上</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai03.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal03">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">技術取得率UP</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai04.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal04">Read More</a></p>
+                  </div> 
+                </article>
+            </div>
+            
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">デジタル授業を受けて</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai01.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal05">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">Wi-Fiの設置</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai02.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal06">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">国際交流を盛んに</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai03.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal07">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">プレゼンテーション</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai04.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal08">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">探究発表</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/mirai01.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01">
+                    </p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01">
+                        <a href="#" class="js-modal-open button_01 -compact" data-target="modal09">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+<!-------------------------------------mocal-------------------------------------------------->
+    <div id="modal01" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">関心・意欲の向上</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work003.webp">
+              </div>
+              実験結果をプロジェクターに投影することで情報の共有ができる。また資料集よりも画像で確認できれば、より理解を深めることができる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal02" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">リスニング力の向上</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work002.webp">
+              </div>
+              ディジタル教科書の活用により、円滑に進めることができ、また映像に合わせてネイティブな発音を聞くことが望める。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal03" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">授業の質の向上</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work001.webp">
+              </div>
+              現在、大量の文章を毎時間黒板に板書しているが、充実したICT教育環境を整えることによって、大幅な時間短縮が見込まれ、教育の質の向上や生徒の進路実現のサポートが可能となる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal04" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">技術取得率UP</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work004.webp">
+              </div>
+              見本となる人をコマ送りで撮影し、その映像を見ることで体の使い方をわかりやすく確認でき、技術の取得を早めることができる。 例）バスケットボールなどで戦略を考える際iPadを使いアプリなどを使ってシミュレーションを行う。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal05" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">デジタル授業を受けて</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work005.webp">
+              </div>
+              Aさんの意見: プロジェクターでの授業は分かりやすいし、見やすくて面白かった。 Bさんの意見: 単語のアクセントの位置を音声で確認できたから良かった。 Cさんの意見: もっと積極的に授業に参加したいと思うようになった。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal06" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">Wi-Fiの設置</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work006.webp">
+              </div>
+              Wi-Fiを学校全体に設置することにより、今までマルチメディア室でしかできなかったICTを使った活動が各教室でもできるようになり、授業効率の向上や無線による設備の簡素化ができる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal07" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">国際交流を盛んに</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work007.webp">
+              </div>
+              現在、交換留学を行ったり、国際経済科ではオーストラリアの姉妹校とテレビ通話を通じて、国際的な交流を図っていますが、ICT環境を整備することによって、スムーズにテレビ通話が行えて今後もっと国際交流が盛んになる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal08" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">プレゼンテーション</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work05.webp">
+              </div>
+              各自のパソコンからさまざまな資料や調査結果を、 ワイヤレス環境でかんたんに表示できるプレゼンテーション システム「WIVIA」を活用し、「自然さ」とインパクトのあるプレゼンを演出する。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal09" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">探究発表</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./img/example-work04.webp">
+              </div>
+              心行くまで空想にふけり、特定の問題に対する専門家とは違った高校生らしい「突拍子もない」解決策を生み出してもらう。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // モーダルウィンドウを開く
+      $('.js-modal-open').on('click', function(){
+        var target = $(this).data('target');
+        var modal = document.getElementById(target);
+        scrollPosition = $(window).scrollTop();
+
+        $('body').addClass('fixed').css({'top': -scrollPosition});
+        $(modal).fadeIn();
+        return false;
+      });
+
+      // モーダルウィンドウを閉じる
+      $('.js-modal-close').on('click', function(){
+        $('body').removeClass('fixed');
+        window.scrollTo( 0 , scrollPosition );
+        $('.js-modal').fadeOut();
+        return false;
+      });
+    </script>
+    <!--Daily Life modal js END-->
+    <script type="text/javascript" src="../js/features.js"></script>
+</body>
+</html>

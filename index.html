@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html class="html" lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000861">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script type="text/javascript" src="./js/leap_button.js"></script>
+    <script type="text/javascript" src="./js/loading.js"></script>
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet"> 
+    <style>
+      *{font-family: 'Noto Serif JP', serif !important;}
+    </style>
+    <title>兵庫県立小野高等学校</title>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+    <meta name=”description” content="これは、次の小野高校のホームページ候補です。こんにちわ、小野高校に通う高校生です。現在、高校側と交渉を行っており、実装に向けて邁進しております。応援よろしくお願いします。">
+    <meta name="keyword" content="小野高校, 兵庫県立小野高等学校, ファンサイト, 120周年, 120周年記念, ono high school, Ono, ono">
+    <meta name="google-site-verification" content="rBxTrzCZcTYQZCeJ_mc9scsN-ZoR5nrCGucjL_tUc_A" />
+</head>
+<body>
+  <!---------------------The origin of this website`s content`s---------------------->
+  <div class="overflow-x">
+      <!-------------------------shutter animation---------------------------------->
+    <div id="loader" class="shutter_1">
+      <div class="shutter_1 loader">
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+      </div>
+
+      <!-- <div class="shutter_1 loader loader--reflect">
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+        <div class="shutter_1 bar"></div>
+      </div> -->
+    </div>
+
+  <!-- <div id="shutter" class="shutter_animation">
+    <img src="./shutter_logo_white.png" alt="No Image" id="shutter_logo" class="shutter_animation"/>
+  </div>
+  <div id="img"></div> -->
+  <!-------------------------Pageleap animation---------------------------------->
+  <div id="page_top">
+    <a id="leap_a" href="#">
+        <div class="fluid"></div>
+    </a>
+  </div>
+  <!--------------------------------header--------------------------------------->
+  <header>
+    <div class="header">
+      <div class="border PC">
+      <div class="width PC">
+        <div class="header__flex PC">
+          <a class="PC" href="./index.html">
+            <img alt="No Image" id="logo" src="./img/navbar_logo.png">
+          </a>
+            <nav class="PC">
+              <ul class="PC">
+                <a class="a_header PC" href="./communication/index.html#grade3">
+                  <div_hamburger class="a_PC PC"><li class="PC">受験生</li></div_hamburger>
+                </a>
+                <a class="a_header PC"  href="./communication/index.html#student">
+                  <div_hamburger class="a_PC PC"><li class="PC">在校生</li></div_hamburger>
+                </a>
+                <a class="a_header PC"  href="./communication/index.html#graduate">
+                  <div_hamburger class="a_PC PC"><li class="PC">卒業生</li></div_hamburger>
+                </a>
+                <a class="a_header PC"  href="./communication/index.html#parent">
+                  <div_hamburger class="a_PC PC"><li class="PC">保護者</li></div_hamburger>
+                </a>
+                <a class="PC"  href="http://www.pure.ne.jp/~seirei/">
+                  <div_hamburger class="a_PC PC"><li class="PC">蜻蛉会</li></div_hamburger>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        </div>
+        <div class="width PC">
+          <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+              <nav class="PC">
+                <ul class="PC">
+                  <a class="a_header PC" href="./introduction/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">学校紹介</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./cafeteria/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">食堂営業</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./library/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">図書館</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./club-activity/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">部活動</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./path/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">進路実績</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC"  href="./communication/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">事務連絡</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./archive/index.html">
+                    <div_hamburger class="a_PC PC"><li class="PC">蜻蛉の軌跡</li></div_hamburger>
+                  </a>
+                </ul>
+              </nav>
+          </div> <!--------------------------------------------display none------------------------->
+          <div class="header_animation_indent"></div>
+    </div>
+    <!-------------------------------------hamburger ect...----------------------------------------------------------->
+    <a class="mobile logo_mobile" href="./PC.html">
+      <img alt="No Image" class="mobile logo_mobile" src="./img/navbar_logo.png">
+    </a>
+      <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+      <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+      <nav class="nav_mobile mobile">
+        <ul class="pt-5 ul_mobile">
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./communication/index.html#grade3">受験生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./communication/index.html#student">在校生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./communication/index.html#graduate">卒業生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./communication/index.html#parent">保護者</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./introduction/index.html">学校紹介</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./cafeteria/index.html">食堂営業</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./library/index.html">図書館</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./club-activity/index.html">部活動</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./path/index.html">進路実績</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./communication/index.html">事務連絡</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./archive/index.html">蜻蛉の軌跡</a></li>
+        </ul>
+      </nav>
+</header>
+
+<!-- <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+<label for="menu-icon mobile"></label>
+<nav class="nav_mobile mobile">
+  <ul class="pt-5 ul_mobile mobile">
+    <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">Work</a></li>
+  </ul>
+</nav> -->
+<!-------------------------------img slide------------------------------------------>
+<ul class="img_ul">
+  <li class="img_li"><a href="#1"><div class="img_img img1"></a></li>
+  <li class="img_li" style="animation-delay: 6.0s"><a class="img_a" href="#2"><div class="img_img img2"></a></li>
+  <li class="img_li" style="animation-delay: 12.0s"><a class="img_a" href="#3"><div class="img_img img3"></a></li>
+  <li class="img_li" style="animation-delay: 18.0s"><a class="img_a" href="#4"><div class="img_img img4"></a></li>
+</ul>
+  <!-- <br class="br_top"></br> -->
+  <!-----------------------------under content--------------------------------->
+
+  <!-- <div class="content-box">
+    <a href="./PC.html">
+      <div class="inner-content-box">在校生</div>
+    </a>
+    <a href="./PC.html">
+      <div class="inner-content-box">卒業生</div>
+    </a>
+    <a href="./PC.html">
+      <div class="inner-content-box">中学生</div>
+    </a>
+    <a href="./PC.html">
+      <div class="inner-content-box">保護者</div>
+    </a>
+  </div> -->
+  <!--start poiint-->
+<!-- <div id="js-cover" class="mobile"></div> -->
+  <!-------------------------------------------Topic------------------------------------------------------------------------->
+  <div class="whole_container">
+    <div class="blog-card spring-fever">
+      <div class="title-content">
+        <h3 class="TopBigTitleh3"><a class="Top_a TopBigTiltle" href="#">創立 120th</a></h3>
+        <div class="intro"> <a class="TopBigSubTiltle" href="#">刻もう歴史に!繋ぐよ未来に!</a> </div>
+      </div>
+      <div class="card-info">
+        1902年に旧制小野中学校が設置されて以来、小野高校は今年で120年を迎える。歴史ある本校は、校是「明・浄・直」の精神を貫き、明朗で心が広く、清廉潔白でかつ心に暗い陰りをもたず、直の精神を育んできた。
+        <a class="Top_a" href="#">More</a>
+      </div>
+      <!-- <div class="utility-info">
+        <ul class="utility-list">
+          <li><span class="licon icon-like"></span><a href="#">2</a></li>
+          <li><span class="licon icon-com"></span><a href="#">12</a></li>
+          <li><span class="licon icon-dat"></span>03 jun 2017</li>
+          <li><span class="licon icon-tag"></span><a href="#">Photos</a>, <a href="#">Nice</a></li>
+        </ul>
+      </div> -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div>
+
+    <!---------------------------------------Daily Life--------------------------------->
+    <br>
+    <h1 class="main_label">Daily Life</h1>
+    <h2 class="subtitle">小野高生の学校生活</h2>
+
+<div class="l-wrapper">
+  <main>
+      <div id="demo02" class="card02 l-section">
+        <div class="l-inner">
+
+          <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+            <div class="swiper-wrapper" style="cursor: grab; transform: translate3d(0px, 0px, 0px); height: 440px" id="swiper-wrapper-8d096253a107c310e8" aria-live="polite">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+              <a class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal01" style="margin-right: 32px;" role="group">
+                <article class="slide">
+                  <div class="slide-media img-cover"><img src="./img/1792047_s.jpg" alt="No Image"></div>
+                  <div class="slide-content">
+                    <time class="slide-date">西暦.4.1</time>
+                    <h2 class="slide-title">新しい学年が始まりました。</h2>
+                  </div>
+                </article>
+              </a>
+
+            </div><!-- /swiper-wrapper -->
+
+            <div class="width">
+              <div class="controller swiper-controller">
+                <!-- <div class="controller swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                  <span class="controller swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span>
+                  <span class="controller swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span>
+                </div> -->
+                <div class="controller swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8d096253a107c310e8" aria-disabled="true"></div>
+                <div class="controller swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8d096253a107c310e8" aria-disabled="false"></div>
+              </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div><!-- /swiper -->
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+<!--------------------------------modal window area start-------------------------------------------->
+
+      <div id="modal01" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">新学年</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+                新入生が入学し、学年が一つ大きくなる季節がやってきました。
+                私たち教職員にとっても、この季節は一つの節目と感じる季節です。
+                今年1年間、生徒の学びがより一層素晴らしいものとなるよう、
+                気を引き締めて指導にあたってきます。
+                保護者の皆様・在校生のみなさん、よろしくお願いします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--------------------------------modal window area END-------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------button area--------------------------->
+<a href="./archive/index.html" class="a-more-button">
+  <div class="buttonMoreSlider buttonMoreDiv">
+    <button class="buttonMore">More</button>
+  </div>
+</a>
+<!-------------------------button area--------------------------->
+ </main>
+</div><!-- /wrapper -->
+
+
+      <!----------------------------------------Features-------------------------------------->
+ <div class="width">
+    <br>
+    <br>
+    <h1 class="main_label">Features</h1>
+    <h2 class="subtitle">時代を拓く人間力を育む</h2>
+
+
+<!--dummy element----------------------------------------------------------------------------->
+    <div class="dummy features" id="card-container" data-offset="2"></div>
+<!--dummy element----------------------------------------------------------------------------->
+
+<a class="features_a" href="./science/index.html">
+    <div class="features" id="card-container" data-offset="2">
+      <!-- <div class="features pg">
+         <img alt="No Image" src="http://riccardotartaglia.it/img/deadpool/deadpool.png">
+      </div> -->
+      <div class="features" id="features-card-1">
+         <!-- <div class="features shine"></div> -->
+         <div class="features text-block">
+            <h1 class="features features_h1">科学探究科</h1>
+            <h3 class="features features_h3">科学の蘊奥を究める</h3>
+            <!-- <p>
+               Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name. It is the eighth installment of the X-Men film series, and is directed by Tim Miller.
+            </p> -->
+            <!-- <button class="features features_button">MORE</button> -->
+            <!-- <div class="features_button_div">
+              <div class="features pure-button fuller-button blue">ACCEPT</div>
+            </div> -->
+         </div>
+      </div>
+   </div>
+</a>
+
+<br>
+
+<a class="features_a" href="./business/index.html">
+<div class="features" id="card-container" data-offset="2">
+   <!-- <div class="features pg">
+      <img alt="No Image" src="http://riccardotartaglia.it/img/deadpool/deadpool.png">
+   </div> -->
+   <div class="features" id="features-card-2">
+      <!-- <div class="features shine"></div> -->
+      <div class="features text-block">
+         <h1 class="features features_h1"><span>ビジネス</span><span>探究科</span></h1>
+         <h3 class="features features_h3">世界に羽ばたく技能を</h3>
+         <!-- <p>
+            Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name. It is the eighth installment of the X-Men film series, and is directed by Tim Miller.
+         </p> -->
+         <!-- <button class="features features_button">MORE</button> -->
+      </div>
+   </div>
+</div>
+</a>
+
+<br>
+
+<a class="features_a" href="./general/index.html">
+<div class="features" id="card-container" data-offset="2">
+   <!-- <div class="features pg">
+      <img alt="No Image" src="http://riccardotartaglia.it/img/deadpool/deadpool.png">
+   </div> -->
+   <div class="features" id="features-card-3">
+      <!-- <div class="features shine"></div> -->
+      <div class="features text-block">
+         <h1 class="features features_h1">普通科</h1>
+         <h3 class="features features_h3">品行方正</h3>
+         <!-- <p>
+            Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name. It is the eighth installment of the X-Men film series, and is directed by Tim Miller.
+         </p> -->
+         <!-- <button class="features features_button">MORE</button> -->
+      </div>
+   </div>
+</div>
+</a>
+
+</div>
+    <!----------------------------------------Announcement-------------------------------------->
+    <br>
+    <br>
+    <div class="width">
+      <h1 class="main_label">Announcement</h1>
+      <h2 class="subtitle">事務室や先生方からの連絡</h2>
+      <br>
+    <iframe src="./announcement/index.html" height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+
+    <!----------------------------------------Calendar---------------------------------->
+    <br>
+    <br>
+    <h1 class="main_label">Calendar</h1>
+    <iframe src="./calender/index.html" height="500px" width="100%" frameborder="0"></iframe>
+    <!-- <iframe class="calender" src="https://calendar.google.com/calendar/embed?src=uoh4f747vr9lrb04f8jkj3egp8%40group.calendar.google.com&ctz=Asia%2FTokyo?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;mode=AGENDA"
+     style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+    <!-----------------------------------OHS Highlight------------------------------------------>
+    <div class="width">
+      <br>
+      <br>
+      <div class="img-container">
+        <div class="img-container_div">
+            <div class="img-container_shadow">
+                <a class="img-container_a" href="https://onohs-kocho-blog.seesaa.net/">
+                  <img alt="No Image" src="./img/card01.webp" class="img-container_img">
+                  <h2 class="img-container_h2">蜻蛉の遠眼鏡<br>加嶋校長のブログ</h2>
+                </a>
+            </div>
+        </div>
+        <div class="img-container_div">
+            <div class="img-container_shadow">
+                <a class="img-container_a" href="./hometown-tax-donation-program/index.html">
+                  <img alt="No Image" src="./img/card02.webp" class="img-container_img">
+                  <h2 class="img-container_h2">ご寄付のお願い<br>~ふるさと納税~</h2>
+                </a>
+            </div>
+        </div>
+        <div class="img-container_div">
+            <div class="img-container_shadow">
+                <a class="img-container_a" href="./science/index.html#ssh">
+                  <img alt="No Image" src="./img/card03.webp" class="img-container_img">
+                  <h2 class="img-container_h2">SSH<br>科学の蘊奥を育む</h2>
+                </a>
+            </div>
+        </div>
+        <div class="img-container_div">
+            <div class="img-container_shadow">
+                <a class="img-container_a" href="./club-activity/PDF/katsuyaku4.pdf">
+                  <img alt="No Image" src="./img/card04.webp" class="img-container_img">
+                  <h2 class="img-container_h2">蜻蛉の風<br>部活動の活躍</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    </div>
+
+    <!------------------------------------------------footer-------------------------------------------->
+    <div class="footer">
+      <div class="width">
+        <img alt="No Image" src="./img/footer_logo.png" class="footer_img">
+        <p class="p_footer_num">〒675-1375 兵庫県小野市西本町518</p>
+        <br class="br_footer"></br>
+        <p class="p_footer_num">Tel: 0794-63-2007 &emsp;&emsp; Fax: 0794-63-2008</p>
+        <p class="p_footer">停電時はFax番号へお掛けください</p>
+        <br class="br_footer"></br>
+        <!-- 3 contents of footer -->
+        <div class="content-box_footer">
+          <a class="js-modal-open  a_footer" data-target="access">
+            <div class="inner-content-box_footer right_footer">アクセス</div>
+          </a>
+          <a class="js-modal-open a_footer" data-target="alert">
+            <div class="inner-content-box_footer center_footer">警報発令時</div>
+          </a>
+          <a class="a_footer" href="./PDF/gakko-kansensyo.pdf" target="_blank" rel="noreferrer noopener">
+            <div class="inner-content-box_footer left_footer">学校感染症</div>
+          </a>
+        </div>
+        <br class="big_br_footer"></br>
+        <small class="small_footer_en">Created by Yuuki Osada. <br class="br_new_line">Designed by Yusei Nishimura.</small>
+        <br>
+        <small class="small_footer_en">Supported by Kotaro Miki<br class="br_new_line"> and Rintaro Kobayashi.</small>
+        <br class="last_br_footer"></br>
+        <small class="small_footer">無断引用・転載を禁じます。</small>
+        <br class="small_br_footer"></br>
+        <small class="small_footer">Ⓒ2022 Hyogo Prefectural Ono High School.</small>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!--------------------------------------------modal----------------------------------------------------->
+  <div id="access" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">アクセス</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+            <div class="DailyLifeImgClass">
+              <img alt="No Image" id="DailyLifeImgId" src="./img/access_map.webp">
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">警報発令時</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+            <div class="DailyLifeImgClass">
+              <img alt="No Image" id="DailyLifeImgId" src="./img/alert.webp">
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./js/swiper-bundle.js"></script>
+  <!--Daily Life slider js start-->
+  <script>
+    const mySwiper = new Swiper('.card02 .swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      grabCursor: true,
+      pagination: {
+        el: '.card02 .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.card02 .swiper-button-next',
+        prevEl: '.card02 .swiper-button-prev',
+      },
+      breakpoints: {
+        1025: {
+          spaceBetween: 32,
+        }
+      },
+    });
+  </script>
+  <!--Daily Life slider js END-->
+
+  <!--Daily Life modal js start-->
+  <script>
+    // モーダルウィンドウを開く
+    $('.js-modal-open').on('click', function(){
+      var target = $(this).data('target');
+      var modal = document.getElementById(target);
+      scrollPosition = $(window).scrollTop();
+
+      $('body').addClass('fixed').css({'top': -scrollPosition});
+      $(modal).fadeIn();
+      return false;
+    });
+
+    // モーダルウィンドウを閉じる
+    $('.js-modal-close').on('click', function(){
+      $('body').removeClass('fixed');
+      window.scrollTo( 0 , scrollPosition );
+      $('.js-modal').fadeOut();
+      return false;
+    });
+  </script>
+  <!--Daily Life modal js END-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./introduction/js/script.js"></script>
+  <script type="text/javascript" src="./js/features.js"></script>
+</body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000861">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-----------------------------------header---------------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/loading.js"></script>
+    <script type="text/javascript" src="../js/leap_button.js"></script>
+    <link rel="shortcut icon" href="./documents/icon.ico">
+    <!------------------------------------audio--------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet"> 
+    <style>
+      *{font-family: 'Noto Serif JP', serif !important;}
+    </style>
+    <title>学校紹介</title>
+</head>
+<body>
+        <!-------------------------shutter animation---------------------------------->
+        <div id="loader" class="shutter_1">
+            <div id="cloud"></div>
+            <div id="eclipse"></div>
+          </div>
+                  <!-------------------------Pageleap animation---------------------------------->
+                  <div id="page_top">
+                    <a id="leap_a" href="#">
+                        <div class="fluid"></div>
+                    </a>
+                  </div>
+                  <!--------------------------------header--------------------------------------->
+                  <header>
+                    <div class="header">
+                      <div class="border PC">
+                      <div class="width PC">
+                        <div class="header__flex PC">
+                          <a class="PC" href="../index.html">
+                            <img alt="No Image" id="logo" src="../img/navbar_logo.png">
+                          </a>
+                            <nav class="PC">
+                              <ul class="PC">
+                                <a class="a_header PC" href="../communication/index.html#grade3">
+                                  <div_hamburger class="a_PC PC"><li class="PC">受験生</li></div_hamburger>
+                                </a>
+                                <a class="a_header PC"  href="../communication/index.html#student">
+                                  <div_hamburger class="a_PC PC"><li class="PC">在校生</li></div_hamburger>
+                                </a>
+                                <a class="a_header PC"  href="../communication/index.html#graduate">
+                                  <div_hamburger class="a_PC PC"><li class="PC">卒業生</li></div_hamburger>
+                                </a>
+                                <a class="a_header PC"  href="../communication/index.html#parent">
+                                  <div_hamburger class="a_PC PC"><li class="PC">保護者</li></div_hamburger>
+                                </a>
+                                <a class="PC"  href="http://www.pure.ne.jp/~seirei/">
+                                  <div_hamburger class="a_PC PC"><li class="PC">蜻蛉会</li></div_hamburger>
+                                </a>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="width PC">
+                          <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                              <nav class="PC">
+                                <ul class="PC">
+                                  <a class="a_header PC" href="./index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">学校紹介</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC" href="../cafeteria/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">食堂営業</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC" href="../library/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">図書館</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC" href="../club-activity/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">部活動</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC" href="../path/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">進路実績</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC"  href="../communication/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">事務連絡</li></div_hamburger>
+                                  </a>
+                                  <a class="a_header PC" href="../archive/index.html">
+                                    <div_hamburger class="a_PC PC"><li class="PC">蜻蛉の軌跡</li></div_hamburger>
+                                  </a>
+                                </ul>
+                              </nav>
+                          </div> <!--------------------------------------------display none------------------------->
+                          <div class="header_animation_indent"></div>
+                    </div>
+                    <!-------------------------------------hamburger ect...----------------------------------------------------------->
+                    <a class="mobile logo_mobile" href="./PC.html">
+                      <img alt="No Image" class="mobile logo_mobile" src="../img/navbar_logo.png">
+                    </a>
+                      <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+                      <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+                      <nav class="nav_mobile mobile">
+                        <ul class="pt-5 ul_mobile">
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#grade3">受験生</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#student">在校生</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#graduate">卒業生</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#parent">保護者</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+                          <!-- <li class="li_mobile mobile"><a class="a_mobile mobile" href="./index.html">学校紹介</a></li> -->
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../cafeteria/index.html">食堂営業</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../library/index.html">図書館</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../club-activity/index.html">部活動</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../path/index.html">進路実績</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html">事務連絡</a></li>
+                          <li class="li_mobile mobile"><a class="a_mobile mobile" href="../archive/index.html">蜻蛉の軌跡</a></li>
+                        </ul>
+                      </nav>
+                </header>
+      <!------------------------------main-------------------------------->
+      <div class="item item_top_slide item01">
+          <div class="top_title">
+            <div class="top_child">
+              &nbsp;時代を
+            </div>
+            <div class="top-margin"></div>
+            <div class="top_child">
+              &nbsp;拓く力を
+            </div>
+            <div class="top-margin"></div>
+            <div class="top_child">
+              &nbsp;育てる
+            </div>
+          </div>
+
+      </div>
+      <div class="item item_title_slide item02">
+        <span class="title_span scroll_layer">
+          羽
+          <br>
+          ば
+          <br>
+          た
+          <br>
+          く
+        </span>
+        <span class="title_span scroll_layer">
+          精
+          <br>
+          神
+          <br>
+          で
+          <br>
+          世
+          <br>
+          界
+          <br>
+          に
+        </span>
+        <span class="title_span scroll_layer">
+          明
+          <br>
+          ・
+          <br>
+          浄
+          <br>
+          ・
+          <br>
+          直
+          <br>
+          の
+        </span>
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="card-container">
+  <div class="card u-clearfix">
+    <h2 class="card-title">校長挨拶</h2>
+    <img src="./img/kashima_1.webp" alt="No Image" class="card-media" />
+    <div class="card-body">
+      <!-- <span class="card-number card-circle subtle">01</span>
+      <span class="card-author subtle">John Smith</span> -->
+
+
+
+      <!-- <h2 class="card-title">校長挨拶</h2> -->
+      <h3 class="card-subtitle">加嶋　幸彦 (令和4年4月1日)</h3>
+      <span class="card-description subtle">
+        ようこそ、本校のWebサイトをご覧いただきありがとうございます。 さて、本校は、江戸時代後期、旧小野藩の藩校「帰正館」を源流とし、１９０２年(明治３５年)に旧制小野中学校が設置されて以来、今年で１２０年の歴史を誇る伝統校であり、約２９，０００人の卒業生が様々な分野で広く活躍しております。校是「明・浄・直」の精神を貫き、明朗で心が広く、清廉潔白でかつ心に暗い陰りをもたず、直の精神を育んできました。先行き不透明で「予測困難な時代」と言われる昨今、答えのない様々な課題の解決に向けて果敢に挑戦し創造する姿勢こそ、これからの時代に不可欠であり、校是のもと、様々な教育活動を取り組んでいくことが大切だと考えています。 これか...
+      </span>
+      <a href="##" class="js-modal-open a-read" data-target="modal01">
+        <div class="card-read card-read-border">Read More</div>
+      </a>
+      <!-- <span class="card-tag card-circle subtle">C</span> -->
+    </div>
+    <!-- <img src="./img/kashima_1.webp" alt="No Image" class="card-media" /> -->
+  </div>
+</div>
+
+    <!----------------------------------modal window----------------------------------------------------->
+    <div id="modal01" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">校長挨拶</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              　ようこそ、本校のWebサイトをご覧いただきありがとうございます。 さて、本校は、江戸時代後期、旧小野藩の藩校「帰正館」を源流とし、１９０２年(明治３５年)に旧制小野中学校が設置されて以来、今年で１２０年の歴史を誇る伝統校であり、約２９，０００人の卒業生が様々な分野で広く活躍しております。校是「明・浄・直」の精神を貫き、明朗で心が広く、清廉潔白でかつ心に暗い陰りをもたず、直の精神を育んできました。先行き不透明で「予測困難な時代」と言われる昨今、答えのない様々な課題の解決に向けて果敢に挑戦し創造する姿勢こそ、これからの時代に不可欠であり、校是のもと、様々な教育活動を取り組んでいくことが大切だと考えています。 これからの時代を担う生徒が人間力を培い、地元あるいは国内外で活躍するため、卒業時、生徒にどのような資質・能力を身に付けることが必要かを教職員同士で議論し、グラデュエーションポリシー「次代を拓く‘ONOProgress’～人間力を育む９つの力～」を策定しました。 本校では、習熟度別授業や少人数での選択授業、個別面談の実施など生徒個々に寄り添い、学習や生活への支援に取り組むとともに、他校に先立ちＩＣＴを活用した学習等を推進しています。また、授業等で身につけた知識・技能を活かし、思考力、判断力、表現力を育み、学びを深める探究活動や、蜻蛉祭や体育大会などの学校行事、部活動など、人との繋がりを大切にし仲間と支え合い、切磋琢磨できる環境を整えています。 文部科学省「スーパーサイエンスハイスクール」指定事業も１期４年目となり、高校３年間を見通した「探究プログラム」を構築し、大学や教育施設、海外の高等学校との連携もオンラインと対面との「ハイブリッド形式」により充実しており、今年度、その成果を全校的な取組として広げていくこととしております。普通科、科学探究科、ビジネス探究科の３学科を有する本県唯一の県立高校として、全県のリーディングスクールとしての役割を担い、人間力を育ててまいります。 また、創立１２０周年を記念して４月、１１月にそれぞれ講演会を実施することとしています。本校のある「小野」の歴史を振り返るとともに、これからの時代を担う生徒にとって、希望と勇気のわく有意義な内容になるものと考えております。 今後ともご支援賜りますようよろしくお願いします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!----------------------------------modal window----------------------------------------------------->
+
+   <br>
+   <br>
+   <h2 class="h2-title-setting">年間行事</h2>
+   <section class="container_event">
+    <div class="container__wrapper_event">
+
+      <a href="##" class="js-modal-open card_event" data-target="event01">
+        <div class="card_event entrance_ceremony"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event02">
+        <div class="card_event field_trip"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event03">
+        <div class="card_event school_festival"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event04">
+        <div class="card_event ball_game"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event05">
+        <div class="card_event sports_day"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event06">
+        <div class="card_event school_trip"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event07">
+        <div class="card_event chorus_contest"></div>
+      </a>
+      <a href="##" class="js-modal-open card_event" data-target="event08">
+        <div class="card_event graduation_ceremony"></div>
+      </a>
+
+    </div>
+  </section>
+  <!----------------------------------modal window event----------------------------------------------------->
+  <div id="event01" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">入学式</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="event02" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">歓迎遠足</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="event03" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">蜻蛉祭</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="event04" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">球技大会</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="event05" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">体育祭</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="event06" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">修学旅行</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="event07" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">合唱祭</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+            <div id="time" class="top_audio_time">
+              <span id="current" class="top_audio_time">00:00</span>
+              <span class="top_audio_time"> / </span>
+              <span id="duration" class="top_audio_time">00:00</span>
+            </div>
+            <audio preload="metadata" src="./[K-ON AMV] 天使にふれたよ！.mp3"></audio>
+            <div id="seekbar"></div>
+            <div id="time" class="bottom_audio_time">
+              <span id="current" class="bottom_audio_time">00:00</span>
+              <span class="bottom_audio_time"> / </span>
+              <span id="duration" class="bottom_audio_time">00:00</span>
+            </div>
+            <div class="media-control">
+              <div class="div-modal-button">
+                <button id="play" class="music-button">
+                  <div class="container-btn">
+                  <div class="btn-modal play">
+                    <span class="bar-media bar-1"></span>
+                    <span class="bar-media bar-2"></span>				
+                  </div>
+                  </div>
+                </button>
+              </div>
+              <div id="stop">
+                <i class="reload-icon fa-solid fa-arrow-rotate-right" style="color: #000861;"></i>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="event08" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">卒業式</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------modal window event----------------------------------------------------->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="section">
+      <div class="container">
+
+
+          <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">学校案内</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./img/pamphlet.webp" alt="No Image" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="./pamphlet/index.html" class="button_01 -compact" >Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+            <article class="card_01">
+              <div class="card__header_01">
+                <p class="card__title_01">グラジュエーションポリシー</p>
+                <figure class="card__thumbnail_01">
+                  <img src="./img/policy.webp" alt="No Image" class="card__image_01">
+              </figure>
+              </div>
+              <div class="card__body_01">
+                <p class="card__text2_01"></p>
+              </div>
+              <div class="card__footer_01">
+                <p class="card__text_01"><a href="./PDF/viewer.pdf" class="button_01 -compact">Read More</a></p>
+              </div>
+            </article>
+        </div>
+
+        <div class="l-wrapper_01">
+          <article class="card_01">
+            <div class="card__header_01">
+              <p class="card__title_01">校歌</p>
+              <figure class="card__thumbnail_01">
+                <img src="./img/sing.webp" alt="No Image" class="card__image_01">
+            </figure>
+            </div>
+            <div class="card__body_01">
+              <p class="card__text2_01"></p>
+            </div>
+            <div class="card__footer_01">
+              <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal02">Read More</a></p>
+            </div>
+          </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">校是</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/mark.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal03">Read More</a></p>
+          </div>
+        </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">歴史・沿革</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/history.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="./history/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+  </div>
+
+  <div class="l-wrapper_01">
+    <article class="card_01">
+      <div class="card__header_01">
+        <p class="card__title_01">キャラクター</p>
+        <figure class="card__thumbnail_01">
+          <img src="./img/monster.webp" alt="No Image" class="card__image_01">
+      </figure>
+      </div>
+      <div class="card__body_01">
+        <p class="card__text2_01"></p>
+      </div>
+      <div class="card__footer_01">
+        <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal04">Read More</a></p>
+      </div>
+    </article>
+</div>
+
+      </div>
+  </section>
+
+
+      <!----------------------------------modal window----------------------------------------------------->
+      <div id="modal02" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">校歌</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+                <div id="time" class="top_audio_time">
+                  <span id="current" class="top_audio_time">00:00</span>
+                  <span class="top_audio_time"> / </span>
+                  <span id="duration" class="top_audio_time">00:00</span>
+                </div>
+                <audio preload="metadata" src="./audio.mp3"></audio>
+                <div id="seekbar"></div>
+                <div id="time" class="bottom_audio_time">
+                  <span id="current" class="bottom_audio_time">00:00</span>
+                  <span class="bottom_audio_time"> / </span>
+                  <span id="duration" class="bottom_audio_time">00:00</span>
+                </div>
+                <div class="media-control">
+                  <div class="div-modal-button">
+                    <button id="play" class="music-button">
+                      <div class="container-btn">
+                      <div class="btn-modal play">
+                        <span class="bar-media bar-1"></span>
+                        <span class="bar-media bar-2"></span>				
+                      </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="stop">
+                    <i class="reload-icon fa-solid fa-arrow-rotate-right" style="color: #000861;"></i>
+                  </div>
+                </div>
+                <!-- <div id="waveform"></div>
+                <div class="div-modal-button">
+                  <button onclick="playstop()" class="music-button">
+                    <div class="container-btn">
+                      <div class="btn-modal play">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>				
+                      </div>
+                    </div>
+                  </button>
+                </div> -->
+                <div class="img_div">
+                  <img alt="No Image" id="Outline_img_modal" src="./img/school_song.webp">
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal03" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">校是</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+                <h1 class="h1-modal-title">校是</h1>
+                <p class="p-modal-center">明き、浄き、直き誠の心</p>
+                <h1 class="h1-modal-title">学校教育目標</h1>
+                <p class="p-modal-left">理想の人間像を追求し、生きる力と学ぶ力を身につけ、一人ひとりの進路を達成させる。</p>
+                <br>
+                <p class="p-modal-left">(1) 校是である明・浄・直(蜻蛉魂)による校風の発揚</p>
+                <p class="p-modal-left">(2) 進路達成に向けての学力養成</p>
+                <p class="p-modal-left">(3) 国際的視野と他を思いやる心の育成</p>
+                <p class="p-modal-left">(4) 健康な身体とたくましい精神の育成</p>
+                <h1 class="h1-modal-title">校章の由来</h1>
+                <div class="img_div">
+                  <img alt="No Image" id="Outline_img_modal" src="./img/mark-content.webp">
+                </div>
+                <p class="p-modal-left">
+                  　創立当時「小野中学校」の小と中の２字を蜻蛉の形とし、わが国の古称である蜻蛉洲（あきつしま） と関係づけて意味を持たせています。頭部にあたる「小」の字は中画を分銅の形に外画は玉の形とし「中」の字は篆書体（てんしょた い）として全体を左右対称にして和合・中正を失わず、知・徳・体の調和のとれた発展を図り、知徳体一体となって困難に打ち勝ち、 負けじ魂をもって雄飛する本校の伝統的な教育理念を表したものです。
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal04" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">オリジナルキャラクター</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+                <h1 class="h1-modal-title">らいおのん</h1>
+                <h1 class="h1-modal-subtitle"><span>小野高校</span><span>公式マスコットキャラクター</span></h1>
+                <div class="img_div">
+                  <img alt="No Image" id="Outline_img_modal" src="./img/rionon.webp">
+                </div>
+                <h1 class="h1-modal-title">しんちゃん　てつくん</h1>
+                <h1 class="h1-modal-subtitle"><span>神戸電鉄株式会社</span><span>マスコットキャラクター</span></h1>
+                <div class="img_div">
+                  <img alt="No Image" id="Outline_img_modal" src="./img/kobedentetsu.webp">
+                </div>
+                <p class="p-modal-left">
+                  　商業科・国際経済科の62回生が平成21年度３年生のときに、課題研究で考案した。
+                  10年以上経った現在も、神戸電鉄のマスコットキャラクターとして活躍している。
+                </p>
+                <h1 class="h1-modal-subtitle">関連サイト</h1>
+                <a href="https://www.shintetsu.co.jp/character/index.html" class="a-modal-content">神戸電鉄HP　「しんちゃん＆てつくんについて」</a>
+                <br>
+                <br>
+                <a href="https://www.shintetsu.co.jp/railway/timetbl/museum_tr/index.html" class="a-modal-content">神戸電鉄HP　「『しんちゃん＆てつくんミュージアム』運行時刻表」</a>
+                <p class="p-modal-left">
+                  　また、文芸部と美術部の共同制作によって絵本にもなっている。
+                </p>
+                <a href="http://www.onokopta.sakura.ne.jp/gakkou/sintetu/files/assets/basic-html/index.html#1" class="a-modal-content">絵本はこちらからご覧いただけます。</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------modal window----------------------------------------------------->
+      <script  src="./js/audio.js"></script>
+           <!--Daily Life modal js start-->
+           <script>
+            // モーダルウィンドウを開く
+            $('.js-modal-open').on('click', function(){
+              var target = $(this).data('target');
+              var modal = document.getElementById(target);
+              scrollPosition = $(window).scrollTop();
+        
+              $('body').addClass('fixed').css({'top': -scrollPosition});
+              $(modal).fadeIn();
+              return false;
+            });
+        
+            // モーダルウィンドウを閉じる
+            $('.js-modal-close').on('click', function(){
+              $('body').removeClass('fixed');
+              window.scrollTo( 0 , scrollPosition );
+              $('.js-modal').fadeOut();
+              return false;
+            });
+          </script>
+          <!--Daily Life modal js END-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script  src="./js/scroll_effect.js"></script>
+    <script  src="./js/script.js"></script>
+    <script type="text/javascript" src="../js/features.js"></script>
+</body>
+</html>

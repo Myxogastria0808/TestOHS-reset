@@ -1,0 +1,96 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
+
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	max-width: 500px;
+}
+body {
+	color: #999;
+	overflow: hidden;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.container {
+	height: 100%;
+	width: 100vw;
+}
+
+a:hover,
+a:active {
+	opacity: 0.6;
+}
+a {
+	text-decoration: none;
+	background: #1baede;
+	color: #fff;
+}
+/* .demo-5 body {
+	background: #fffbd6;
+} */
+
+
+@media screen and (max-width: 46.0625em) {
+	.column {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 1em; 
+	}
+
+	/* .column p {
+		text-align: left;
+		font-size: 1.5em;
+	} */
+
+	.column:nth-child(2) {
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	}
+}
+
+/* @media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+} */
+
+img {
+	width: 100%;
+	max-width: 500px;
+}
+.img {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+	.PC {
+		display: none;
+	}
+}
+@media screen and (min-width: 801px) {
+	.mobile {
+		display: none;
+	}
+}

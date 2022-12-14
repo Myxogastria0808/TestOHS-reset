@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000861">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet"> 
+    <style>
+      *{font-family: 'Noto Serif JP', serif !important;}
+    </style>
+    <!-----------------------------------header---------------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/loading.js"></script>
+    <script type="text/javascript" src="../js/leap_button.js"></script>
+    <link rel="shortcut icon" href="../img/icon.ico">
+    <title>部活動</title>
+</head>
+<body>
+      <!-------------------------shutter animation---------------------------------->
+      <div id="loader" class="shutter_1">
+        <div id="cloud"></div>
+        <div id="eclipse"></div>
+      </div>
+          <!-------------------------Pageleap animation---------------------------------->
+          <div id="page_top">
+            <a id="leap_a" href="#">
+                <div class="fluid"></div>
+            </a>
+          </div>
+          <!--------------------------------header--------------------------------------->
+          <header>
+            <div class="header">
+              <div class="border PC">
+              <div class="width PC">
+                <div class="header__flex PC">
+                  <a class="PC" href="../index.html">
+                    <img alt="No Image" id="logo" src="../img/navbar_logo.png">
+                  </a>
+                    <nav class="PC">
+                      <ul class="PC">
+                        <a class="a_header PC" href="../communication/index.html#grade3">
+                          <div_hamburger class="a_PC PC"><li class="PC">受験生</li></div_hamburger>
+                        </a>
+                        <a class="a_header PC"  href="../communication/index.html#student">
+                          <div_hamburger class="a_PC PC"><li class="PC">在校生</li></div_hamburger>
+                        </a>
+                        <a class="a_header PC"  href="../communication/index.html#graduate">
+                          <div_hamburger class="a_PC PC"><li class="PC">卒業生</li></div_hamburger>
+                        </a>
+                        <a class="a_header PC"  href="../communication/index.html#parent">
+                          <div_hamburger class="a_PC PC"><li class="PC">保護者</li></div_hamburger>
+                        </a>
+                        <a class="PC"  href="http://www.pure.ne.jp/~seirei/">
+                          <div_hamburger class="a_PC PC"><li class="PC">蜻蛉会</li></div_hamburger>
+                        </a>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                </div>
+                <div class="width PC">
+                  <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                      <nav class="PC">
+                        <ul class="PC">
+                          <a class="a_header PC" href="../introduction/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">学校紹介</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC" href="../cafeteria/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">食堂営業</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC" href="../library/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">図書館</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC" href="../club-activity/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">部活動</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC" href="../path/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">進路実績</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC"  href="../communication/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">事務連絡</li></div_hamburger>
+                          </a>
+                          <a class="a_header PC" href="../archive/index.html">
+                            <div_hamburger class="a_PC PC"><li class="PC">蜻蛉の軌跡</li></div_hamburger>
+                          </a>
+                        </ul>
+                      </nav>
+                  </div> <!--------------------------------------------display none------------------------->
+                  <div class="header_animation_indent"></div>
+            </div>
+            <!-------------------------------------hamburger ect...----------------------------------------------------------->
+            <a class="mobile logo_mobile" href="./PC.html">
+              <img alt="No Image" class="mobile logo_mobile" src="../img/navbar_logo.png">
+            </a>
+              <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+              <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+              <nav class="nav_mobile mobile">
+                <ul class="pt-5 ul_mobile">
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#grade3">受験生</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#student">在校生</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#graduate">卒業生</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#parent">保護者</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../introduction/index.html">学校紹介</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../cafeteria/index.html">食堂営業</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../library/index.html">図書館</a></li>
+                  <!-- <li class="li_mobile mobile"><a class="a_mobile mobile" href="../club-activity/index.html">部活動</a></li> -->
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../path/index.html">進路実績</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html">事務連絡</a></li>
+                  <li class="li_mobile mobile"><a class="a_mobile mobile" href="../archive/index.html">蜻蛉の軌跡</a></li>
+                </ul>
+              </nav>
+        </header>
+<!--------------------------------main------------------------------------->
+  <div class="top">
+    <section class="top-section">
+      <img alt="No Image" id="title-img" src="./img/title.webp">
+    </section>
+  </div>
+
+  <a href="./PDF/katsuyaku4.pdf" class="a-topicNews">
+    <div class="topicNews">
+      <div class="div-inline">
+        <span>--年号--年度</span>
+        <span>部活動の活躍</span>
+      </div>
+    </div>
+  </a>
+
+    <h1 class="h1-title">運動部</h1>
+    <section class="section">
+        <div class="container">
+
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">野球部</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/slide26.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01"></p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01"><a href="../each-club-activity/baseball/index.html" class="button_01 -compact">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">陸上競技部</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/slide29.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01"></p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01"><a href="../each-club-activity/track-and-field/index.html" class="button_01 -compact">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+                <article class="card_01">
+                  <div class="card__header_01">
+                    <p class="card__title_01">ソフトボール部</p>
+                    <figure class="card__thumbnail_01">
+                      <img src="./img/slide25.webp" alt="No Image" class="card__image_01">
+                  </figure>
+                  </div>
+                  <div class="card__body_01">
+                    <p class="card__text2_01"></p>
+                  </div>
+                  <div class="card__footer_01">
+                    <p class="card__text_01"><a href="../each-club-activity/softball/index.html" class="button_01 -compact">Read More</a></p>
+                  </div>
+                </article>
+            </div>
+
+            <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">サッカー部</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./img/slide30.webp" alt="No Image" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="../each-club-activity/soccer/index.html" class="button_01 -compact">Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+            <article class="card_01">
+              <div class="card__header_01">
+                <p class="card__title_01">水泳部</p>
+                <figure class="card__thumbnail_01">
+                  <img src="./img/slide31.webp" alt="No Image" class="card__image_01">
+              </figure>
+              </div>
+              <div class="card__body_01">
+                <p class="card__text2_01"></p>
+              </div>
+              <div class="card__footer_01">
+                <p class="card__text_01"><a href="../each-club-activity/swimming/index.html" class="button_01 -compact">Read More</a></p>
+              </div>
+            </article>
+        </div>
+
+        <div class="l-wrapper_01">
+          <article class="card_01">
+            <div class="card__header_01">
+              <p class="card__title_01">男子テニス部</p>
+              <figure class="card__thumbnail_01">
+                <img src="./img/slide23.webp" alt="No Image" class="card__image_01">
+            </figure>
+            </div>
+            <div class="card__body_01">
+              <p class="card__text2_01"></p>
+            </div>
+            <div class="card__footer_01">
+              <p class="card__text_01"><a href="../each-club-activity/tennis-men/index.html" class="button_01 -compact">Read More</a></p>
+            </div>
+          </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">男子ソフトテニス部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide21.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/soft-tennis-men/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">女子ソフトテニス部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide22.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/soft-tennis-women/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">男子バスケットボール部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide28.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/basketball-men/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">女子バスケットボール部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide27.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/basketball-women/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">男子バレーボール部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide20.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/volleyball-men/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">女子バレーボール部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide19.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/volleyball-women/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">男子卓球部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide18.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/ping-pong-men/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">女子卓球部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide17.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/ping-pong-women/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">柔道部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide16.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/judo/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">剣道部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide15.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/kendo/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">空手部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide14.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/karate/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">ダンス部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide0.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/dance/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+      </div>
+
+        </div>
+    </section>
+
+
+    <h1 class="h1-title">文化部</h1>
+    <section class="section">
+      <div class="container">
+          <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">吹奏楽部</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./img/slide34.webp" alt="No Image" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="../each-club-activity/brassband/index.html" class="button_01 -compact">Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">放送部</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./img/slide12.webp" alt="No Image" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="../each-club-activity/school-broardcasting/index.html" class="button_01 -compact">Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">ギター部</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./img/slide36.webp" alt="No Image" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="../each-club-activity/guitar/index.html" class="button_01 -compact">Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+            <article class="card_01">
+              <div class="card__header_01">
+                <p class="card__title_01">書道部</p>
+                <figure class="card__thumbnail_01">
+                  <img src="./img/slide11.webp" alt="No Image" class="card__image_01">
+              </figure>
+              </div>
+              <div class="card__body_01">
+                <p class="card__text2_01"></p>
+              </div>
+              <div class="card__footer_01">
+                <p class="card__text_01"><a href="../each-club-activity/calligraphy/index.html" class="button_01 -compact">Read More</a></p>
+              </div>
+            </article>
+        </div>
+
+        <div class="l-wrapper_01">
+          <article class="card_01">
+            <div class="card__header_01">
+              <p class="card__title_01">音楽部</p>
+              <figure class="card__thumbnail_01">
+                <img src="./img/slide10.webp" alt="No Image" class="card__image_01">
+            </figure>
+            </div>
+            <div class="card__body_01">
+              <p class="card__text2_01"></p>
+            </div>
+            <div class="card__footer_01">
+              <p class="card__text_01"><a href="../each-club-activity/music/index.html" class="button_01 -compact">Read More</a></p>
+            </div>
+          </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">華道部</p>
+            <figure class="card__thumbnail_01">
+              <img src="./img/slide35.webp" alt="No Image" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="../each-club-activity/flower-arrangement/index.html" class="button_01 -compact">Read More</a></p>
+          </div>
+        </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">化学部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide9.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/chemistry/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">茶道部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide8.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/tea-ceremony/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">物理部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide7.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/phisics/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">文芸部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide6.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/literature/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">生物部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide32.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/biology/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">ESS部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide5.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/ESS/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">天文部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide33.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/astronomy/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">家庭科研究部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide4.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/home-economics/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">囲碁・将棋部</p>
+          <figure class="card__thumbnail_01">
+            <img src="img/slide1.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/go-shogi/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">美術部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide2.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/art/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">ビジネスライセンス部</p>
+          <figure class="card__thumbnail_01">
+            <img src="./img/slide3.webp" alt="No Image" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="../each-club-activity/business-license/index.html" class="button_01 -compact">Read More</a></p>
+        </div>
+      </article>
+    </div>
+
+      </div>
+  </section>
+
+
+  <script type="text/javascript" src="../js/features.js"></script>
+</body>
+</html>

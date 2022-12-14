@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#000861">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script type="text/javascript" src="./js/leap_button.js"></script>
+  <script type="text/javascript" src="./js/loading.js"></script>
+
+
+  <link rel="shortcut icon" href="./img/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet"> 
+  <style>
+    *{font-family: 'Noto Serif JP', serif !important;}
+  </style>
+  <title>奨学金</title>
+</head>
+<body>
+        <!-------------------------shutter animation---------------------------------->
+        <div id="loader" class="shutter_1">
+          <div id="cloud"></div>
+          <div id="eclipse"></div>
+        </div>
+              <!-------------------------Pageleap animation---------------------------------->
+              <div id="page_top">
+                <a id="leap_a" href="#">
+                    <div class="fluid"></div>
+                </a>
+              </div>
+              <!--------------------------------header--------------------------------------->
+              <header>
+                <div class="header">
+                  <div class="border PC">
+                  <div class="width PC">
+                    <div class="header__flex PC">
+                      <a class="PC" href="../index.html">
+                        <img alt="No Image" id="logo" src="../../img/navbar_logo.png">
+                      </a>
+                        <nav class="PC">
+                          <ul class="PC">
+                            <a class="a_header PC" href="../communication/index.html#grade3">
+                              <div_hamburger class="a_PC PC"><li class="PC">受験生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#student">
+                              <div_hamburger class="a_PC PC"><li class="PC">在校生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#graduate">
+                              <div_hamburger class="a_PC PC"><li class="PC">卒業生</li></div_hamburger>
+                            </a>
+                            <a class="a_header PC"  href="../communication/index.html#parent">
+                              <div_hamburger class="a_PC PC"><li class="PC">保護者</li></div_hamburger>
+                            </a>
+                            <a class="PC"  href="http://www.pure.ne.jp/~seirei/">
+                              <div_hamburger class="a_PC PC"><li class="PC">蜻蛉会</li></div_hamburger>
+                            </a>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="width PC">
+                      <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                          <nav class="PC">
+                            <ul class="PC">
+                              <a class="a_header PC" href="../introduction/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">学校紹介</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="./index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">食堂営業</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../library/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">図書館</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../club-activity/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">部活動</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../path/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">進路実績</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC"  href="../communication/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">事務連絡</li></div_hamburger>
+                              </a>
+                              <a class="a_header PC" href="../archive/index.html">
+                                <div_hamburger class="a_PC PC"><li class="PC">蜻蛉の軌跡</li></div_hamburger>
+                              </a>
+                            </ul>
+                          </nav>
+                      </div> <!--------------------------------------------display none------------------------->
+                      <div class="header_animation_indent"></div>
+                </div>
+                <!-------------------------------------hamburger ect...----------------------------------------------------------->
+                <a class="mobile logo_mobile" href="./PC.html">
+                  <img alt="No Image" class="mobile logo_mobile" src="../../img/navbar_logo.png">
+                </a>
+                  <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+                  <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+                  <nav class="nav_mobile mobile">
+                    <ul class="pt-5 ul_mobile">
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#grade3">受験生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#student">在校生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#graduate">卒業生</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html#parent">保護者</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../introduction/index.html">学校紹介</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="./index.html">食堂営業</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../library/index.html">図書館</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../club-activity/index.html">部活動</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../path/index.html">進路実績</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../communication/index.html">事務連絡</a></li>
+                      <li class="li_mobile mobile"><a class="a_mobile mobile" href="../archive/index.html">蜻蛉の軌跡</a></li>
+                    </ul>
+                  </nav>
+            </header>
+
+
+            
+<div class="wave-header">
+  <div class="wave-inner-header title_wave-flex">
+    <h1 class="wave-h1">奨学金</h1>
+  </div>
+  <!--Waves Container-->
+  <div>
+    <svg class="wave-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="wave-parallax">
+        <use class="wave-use" xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use class="wave-use" xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use class="wave-use" xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use class="wave-use" xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+</div>
+<!--Header ends-->
+<!--Content starts-->
+<div class="wave-content">
+  <h1 class="wave-subtitle-h1">令和４年度</h1>
+  <h1 class="wave-title-h1">奨学金案内一覧</h1>
+  <p class="wave-p">
+    これまでに本校に案内が届いている奨学金の一覧は下記の通りです。
+    本校内での手続き等にかかる時間の関係上、校内締切日を本締切日の約２週間前に設定しております。
+    校内締切日までに応募をお願いいたします。
+    希望される場合は、奨学金の概要をご確認のうえ、まずは事務室の担当者（杉山）までご連絡ください。
+    その後に必要な書類を整えてください。
+    ご不明な点は、学校までご連絡、ご相談ください。
+    なお、「奨学金ガイドブック」もございますので、是非ご活用ください。
+  </p>
+  <a href="./PDF/katsuyaku4.pdf" class="a-topicNews">
+    <div class="topicNews">
+      <div class="div-inline">
+        奨学金ガイドブック
+      </div>
+    </div>
+  </a>
+
+  <br>
+  <br>
+  <ul class="body__element body__cards">
+
+
+    <li class="body__element body__cards__item">
+      <div class="body__element body__card">
+        <div class="body__element body__card__image body__card__image--benefit"></div>
+        <div class="body__element body__card__content">
+          <p class="body__left body__element body__card__text">奨学金名</p>
+          <div class="body__left body__element body__card__title">公益財団法人 交通遺児育英会</div>
+          <p class="body__left body__element body__card__text">対象学年</p>
+          <div class="body__left body__element body__card__title">全学年</div>
+          <p class="body__left body__element body__card__text">校内応募締切日</p>
+          <div class="body__left body__element body__card__title">令和5年1月17日（火）</div>
+            <button onclick="window.open('https://qiita.com/mzmz__02')" rel="noopener noreferrer" class="body__element body__btn">
+              READ MORE
+            </button>
+        </div>
+      </div>
+    </li>
+  
+    <li class="body__element body__cards__item">
+      <div class="body__element body__card">
+        <div class="body__element body__card__image body__card__image--loan"></div>
+        <div class="body__element body__card__content">
+          <p class="body__left body__element body__card__text">奨学金名</p>
+          <div class="body__left body__element body__card__title">公益財団法人 交通遺児育英会</div>
+          <p class="body__left body__element body__card__text">対象学年</p>
+          <div class="body__left body__element body__card__title">全学年</div>
+          <p class="body__left body__element body__card__text">校内応募締切日</p>
+          <div class="body__left body__element body__card__title">令和5年1月17日（火）</div>
+          <button onclick="window.open('https://qiita.com/mzmz__02')" rel="noopener noreferrer" class="body__element body__btn">
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </li>
+  
+    <li class="body__element body__cards__item">
+      <div class="body__element body__card">
+        <div class="body__element body__card__image body__card__image--other"></div>
+        <div class="body__element body__card__content">
+          <p class="body__left body__element body__card__text">奨学金名</p>
+          <div class="body__left body__element body__card__title">公益財団法人 交通遺児育英会</div>
+          <p class="body__left body__element body__card__text">対象学年</p>
+          <div class="body__left body__element body__card__title">全学年</div>
+          <p class="body__left body__element body__card__text">校内応募締切日</p>
+          <div class="body__left body__element body__card__title">令和5年1月17日（火）</div>
+          <button onclick="window.open('https://qiita.com/mzmz__02')" rel="noopener noreferrer" class="body__element body__btn">
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </li>
+  
+  
+  </ul>
+  <br>
+  <br>
+  <br>
+</div>
+<!--Content ends-->
+
+
+
+  <script type="text/javascript" src="./js/features.js"></script>
+</body>
+</html>
