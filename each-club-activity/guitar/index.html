@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../loading.js"></script>
+    <script type="text/javascript" src="../leap_button.js"></script>
+    <link rel="shortcut icon" href="../icon.ico">
+    <title>ギター部</title>
+</head>
+<body>
+
+
+      <!-------------------------shutter animation---------------------------------->
+      <div id="loader" class="shutter_1">
+        <div id="cloud"></div>
+        <div id="eclipse"></div>
+      </div>
+      <!-------------------------Pageleap animation---------------------------------->
+      <div id="page_top">
+        <a id="leap_a" href="#">
+            <div class="fluid"></div>
+        </a>
+      </div>
+    <!--------------------------------header--------------------------------------->
+    <header>
+      <div class="header">
+        <div class="border PC">
+        <div class="width width_padding PC">
+          <div class="header__flex PC">
+            <a class="PC" href="../index.html">
+              <img alt="No Image" id="logo" src="../navbar_logo.png">
+            </a>
+              <nav class="PC">
+                <ul class="PC">
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">受験生</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">在校生</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">卒業生</li></div_hamburger>
+                  </a>
+                  <a class="PC"  href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">保護者</li></div_hamburger>
+                  </a>
+                  <a class="PC"  href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">同窓会</li></div_hamburger>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </div>
+          <div class="width PC">
+            <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                <nav class="PC">
+                  <ul class="PC">
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">学校紹介</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">教育内容</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">食堂営業</li></div_hamburger>
+                    </a>
+                    <a class=" PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">学校生活</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">探究活動</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">国際交流</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">進路状況</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">事務連絡</li></div_hamburger>
+                    </a>
+                  </ul>
+                </nav>
+            </div> <!--------------------------------------------display none------------------------->
+            <div class="header_animation_indent"></div>
+      </div>
+      <!-------------------------------------hamburger ect...----------------------------------------------------------->
+      <a class="mobile logo_mobile" href="./PC.html">
+        <img alt="No Image" class="mobile logo_mobile" src="./navbar_logo.png">
+      </a>
+        <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+        <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+        <nav class="nav_mobile mobile">
+          <ul class="pt-5 ul_mobile">
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">受験生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">在校生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">卒業生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">保護者</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">学校紹介</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">教育内容</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">食堂営業</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">探究活動</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">国際交流</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">進路状況</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">事務連絡</a></li>
+          </ul>
+        </nav>
+  </header>
+<!--------------------------------main------------------------------------->
+    <div class="top">
+        <section>
+          <img alt="No Image" id="title-img" src="./title.png">
+        </section>
+    </div>
+
+    <div class="width">
+      <h1 class="sub-title">メッセージ</h1>
+      <p class="content left">
+        ギター部という名称ですが、ロックやポップスなどの軽音楽を演奏しています。
+        「清く、正しく、ロックンロール」を合い言葉に、より大きなステージで多くの人に向けて演奏できるよう、日々練習に励んでいます。
+        バンド単位での練習が中心と思われがちですが、部員全員、あるいは各パートでの練習も重視し、全員でより良い演奏を目指しています。
+      </p>
+      <h1 class="sub-title">ギター部 YouTubeチャンネル</h1>
+      <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/?list=UU9f9RAj6mEJ0jncNhKj9fgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="ul">
+        <li class="li">
+          <img alt="No Image" class="img-li" src="./21guitar_3.jpg">
+        </li>
+        <li class="li">
+            <img alt="No Image" class="img-li" src="./21guitar_1.jpg">
+        </li>
+        <li class="li">
+            <img alt="No Image" class="img-li" src="./21guitar_4.jpg">
+        </li>
+      </ul>
+      <h1 class="sub-title">部活内容</h1>
+      <div class="div-schedule">
+        <p class="content left">本校ギター部は高等学校軽音楽連盟兵庫に加盟し、連盟主催イベントを中心に各種コンテスト・地域イベント・自主企画を含めた各種ライブに出演しています。</p>
+        <p class="content left">※予定は随時更新していきます。</p>
+      </div>
+
+      <h1 class="sub-title">部員数</h1>
+      <div class="div-schedule">
+        <p class="content center">全５３名</p>
+        <p class="content center">１年生　１８名</p>
+        <p class="content center">２年生　１８名</p>
+        <p class="content center">３年生　１７名</p>
+      </div>
+
+      <h1 class="sub-title">2022年度　出演予定ライブ</h1>
+      <div class="div-schedule">
+        <p class="p-schedule">4月28日(木)</p>
+        <p class="content left">蜻蛉祭（本校）</p>
+        <p class="p-schedule">5月7日(土)</p>
+        <p class="content left">３年生引退ライブ</p>
+        <p class="p-schedule">5月28日(土)・29日(日)</p>
+        <p class="content left">西播磨地区合同ライブ（姫路あいめっせホール）</p>
+        <p class="content left">第67回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="p-schedule">7月</p>
+        <p class="content left">校内ライブ、全国大会東京大会兵庫県予選、西播地区合同ライブ</p>
+        <p class="p-schedule">8月</p>
+        <p class="content left">部内ライブ、合同ライブなど</p>
+        <p class="p-schedule">9月</p>
+        <p class="content left">第68回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="content left">兵庫県総合文化祭合同発表会代表選考会</p>
+        <p class="p-schedule">11月</p>
+        <p class="content left">兵庫県高等学校総合文化祭合同発表会（神戸ハーバーランド）</p>
+        <p class="p-schedule">12月</p>
+        <p class="content left">第69回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="content left">校内ライブ（本校・蜻蛉ホール）</p>
+        <p class="p-schedule">1月</p>
+        <p class="content left">全国聡文県代表選考会、近畿フェス県代表選考会</p>
+        <p class="p-schedule">3月</p>
+        <p class="content left">小野高校主催合同ライブ（本校・蜻蛉ホール）</p>
+        <p class="content left">西播地区合同ライブ（姫路あいめっせホール）</p>
+        <p class="content left">近畿軽音楽フェスティバル県代表選考会</p>
+        <p class="content left">全国軽音楽フェスティバル県代表選考会</p>
+      </div>
+
+
+
+
+      <h1 class="sub-title">これまでの主な入賞歴</h1>
+      <div class="year-cover">
+        <u class="u">2021年度</u>
+      </div>
+      <br>
+      <u class="content">近畿北陸軽音楽コンテスト本選出場</u>
+      <h2 class="sub-sub-title">74回生　Temhota「零雨が降る夜に」（オリジナル）</h2>
+      <div class="youtube youtube-width">
+        <iframe width="550" height="309" src="https://www.youtube.com/embed/29p9EELFEe8" title="全国軽音フェス　オリジナル部門エントリー曲　兵庫県立小野高等学校　零雨が降る街で" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 class="sub-sub-title">同上　大会動画</h2>
+      <div class="youtube youtube-width">
+        <iframe width="550" height="309" src="https://www.youtube.com/embed/1DkOvpf8SnA" title="Temhota／兵庫県立小野高等学校（演奏曲：零雨が降る街で／オリジナル曲）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 class="sub-sub-title">75回生　フリーWi-Fi「My Sharona/TheKnack」</h2>
+      <div class="youtube youtube-width">
+        <iframe width="550" height="309" src="https://www.youtube.com/embed/5oBuMrp9vPc" title="フリーWi-Fi／兵庫県立小野高等学校（演奏曲：My Sharona／The Knack）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 class="sub-sub-title">75回生　Král「Clear」（オリジナル曲）</h2>
+      <div class="youtube youtube-width">
+        <iframe width="550" height="309" src="https://www.youtube.com/embed/CNUEdbiwSXA" title="Král／兵庫県立小野高等学校（演奏曲：Clear／オリジナル曲）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <u class="content">大阪音楽大学　第４回ポピュラー・ミュージック・フェスティバル　本選選出</u>
+      <br>
+      <br>
+      <u class="content">第46回兵庫県高等学校総合文化祭合同発表会軽音楽部門予選　優秀賞</u>
+      <h2 class="sub-sub-title">75回生　ゲネイオン　「I wanna go where the people go/The Wildhearts」</h2>
+      <div class="youtube youtube-width">
+        <iframe width="550" height="309" src="https://www.youtube.com/embed/5e6u8u_wrew" title="20211120 県聡文合同発表会　兵庫県立小野高校ギター部　ゲネイオン　I wanna go where the people go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <u class="content">全国高等学校軽音楽コンテスト県予選優秀賞</u>
+      <h2 class="sub-sub-title">75回生　ノンフライポテト「Barracuda/Heart」</h2>
+      <br>
+      <br>
+      <a class="a-button" href="https://www.youtube.com/watch?v=Fw3TDqtOET8">
+        <button>
+          <div class="div-button"></div>
+        </button>
+      </a>
+
+      <div class="year-cover">
+        <u class="u">2020年度</u>
+      </div>
+      <br>
+      <u class="content">大阪音楽大学　第3回ポピュラー・ミュージック・フェスティバル　本選出場</u>
+      <h2 class="sub-sub-title">74回生　ヴァネロペ　「Kick Start My Heart／Motley Crue」</h2>
+      <br>
+      <u class="content">第44回兵庫県高等学校総合文化祭合同発表会軽音楽部門予選　優秀賞</u>
+      <h2 class="sub-sub-title">74回生　紙バンド　「Truth／T-スクエア」</h2>
+      <br>
+      <u class="content">高等学校軽音楽フェスティバル2020　洋楽カヴァー部門　優秀作品</u>
+      <h2 class="sub-sub-title">　73・74回生　「Fly me to the moon／Frank Sinatra」</h2>
+      <br>
+      <br>
+      <a class="a-button" href="https://www.esp.ac.jp/osaka/keion_fes/2020/result/cover_pops/index.html">
+        <button>
+          <div class="div-button"></div>
+        </button>
+      </a>
+      <br>
+      <u class="content">きのかわ和歌山総文2021県代表選考会　優秀賞（第３位）</u>
+      <h2 class="sub-sub-title">74回生　「零雨が降る街で」（オリジナル）</h2>
+      <br>
+      <u class="content">第2回近畿北陸高等学校軽音楽コンテスト本選出場→緊急事態宣言により中止。</u>
+      <br>
+      <div class="year-cover">
+        <u class="u">2019年度</u>
+      </div>
+      <br>
+      <u class="content">大阪音楽大学　第2回ポピュラー・ミュージック・フェスティバル　本選出場</u>
+      <br>
+      <h2 class="sub-sub-title">73回生　Directors　「American Idiot／Green Day」</h2>
+      <br>
+      <u class="content">兵庫チャレンジフェスタU18グランプリ　本選出場</u>
+      <br>
+      <h2 class="sub-sub-title">73回生　Directors　「American Idiot／Green Day」</h2>
+      <br>
+      <u class="content">第1回近畿北陸高等学校軽音楽コンテスト　奨励賞</u>
+      <br>
+      <h2 class="sub-sub-title">73回生　知能指数1300　「タイムマシーンにお願い／サディスティック・ミカ・バンド」</h2>
+      <br>
+      <u class="content">大阪音楽大学短期大学部ポピュラー・ミュージック・コース主催</u>
+      <br>
+      <u class="content">ヴォーカルコンテスト　優勝ならびに大阪音楽大学賞・聴衆賞受賞</u>
+      <br>
+      <h2 class="sub-sub-title">73回生　古川夕望　「罪と罰／椎名林檎」</h2>
+
+      <div class="year-cover">
+        <u class="u">2018年度</u>
+      </div>
+      <br>
+      <u class="content">近畿高等学校総合文化祭　県代表選出</u>
+      <br>
+      <h2 class="sub-sub-title">71回生　Easel　「Trooper／Iron Maiden」</h2>
+
+      <div class="year-cover">
+        <u class="u">2017年度</u>
+      </div>
+      <br>
+      <u class="content">兵庫県高等学校総合文化祭合同発表会　県代表選出</u>
+      <br>
+      <h2 class="sub-sub-title">70回生　「M / プリンセス・プリンセス」</h2>
+
+
+
+
+
+
+      <h1 class="sub-title">2021年度　出演ライブ</h1>
+      <div class="div-schedule">
+        <p class="p-schedule">4月</p>
+        <p class="content left">全国高等学校軽音楽フェスティバル2021　県代表選考会（オンラインにて）</p>
+        <p class="p-schedule">4月28日(水)・29日(木・祝) -> 6月9日(水)</p>
+        <p class="content left">蜻蛉祭(本校)</p>
+        <p class="p-schedule">5月2日(日)</p>
+        <p class="content left">北播地区高等学校合同ライブ（播磨中央公園）</p>
+        <p class="p-schedule">5月29日(土)</p>
+        <p class="content left">第64回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="p-schedule">5月30日(日)</p>
+        <p class="content left">西播磨地区合同ライブ（姫路あいめっせホール）</p>
+        <p class="p-schedule">6月20日(日)</p>
+        <p class="content left">74回生引退ライブ（本校・食堂）</p>
+        <p class="p-schedule">8月</p>
+        <p class="content left">全国大会東京大会兵庫県予選（オンラインにて）</p>
+        <p class="p-schedule">8月12日(木)</p>
+        <p class="content left">北播地区高等学校合同ライブ（播磨中央公園）</p>
+        <p class="p-schedule">8月21日(土)</p>
+        <p class="content left">西播磨地区合同ライブ（姫路あいめっせホール）</p>
+        <p class="p-schedule">8月27日(金)</p>
+        <p class="content left">校内ライブ（本校食堂）</p>
+        <p class="p-schedule">8月28日(土)</p>
+        <p class="content left">大阪音楽大学主催ポピュラーミュージックフェスティバル本選</p>
+        <p class="p-schedule">9月25日(土)</p>
+        <p class="content left">第65回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="p-schedule">9月26日(日)</p>
+        <p class="content left">兵庫県総合文化祭合同発表会代表選考会</p>
+        <p class="p-schedule">11月16日(火)</p>
+        <p class="content left">文化部中間発表（本校・蜻蛉ホール）</p>
+        <p class="p-schedule">11月20日(土)</p>
+        <p class="content left">兵庫県高等学校総合文化祭合同発表会（神戸ハーバーランド　スペースシアター）</p>
+        <p class="p-schedule">12月18日(土)</p>
+        <p class="content left">第65回ソニックHSライブ（神戸電子専門学校SonicHall）</p>
+        <p class="p-schedule">12月24日(金)</p>
+        <p class="content left">校内ライブ（本校食堂・音楽部と合同）</p>
+        <p class="p-schedule">1月7日(金)</p>
+        <p class="content left">全国聡文県代表選考会（明石市民会館中ホール）</p>
+        <p class="p-schedule">3月</p>
+        <p class="content left">近畿軽音楽フェスティバル県代表選考会（オンライン）</p>
+        <p class="content left">全国軽音楽フェスティバル県代表選考会（オンライン）</p>
+        <p class="p-schedule">3月21日(祝・月)</p>
+        <p class="content left">校内ライブ（本校）</p>
+        <p class="p-schedule">3月29日(火)</p>
+        <p class="content left">西播磨地区合同ライブ（姫路あいメッセホール）</p>
+      </div>
+
+      <h1 class="sub-title">2020年度　出演ライブ</h1>
+      <div class="div-schedule">
+        <p class="p-schedule">7月27日(月)</p>
+        <p class="content left">3年生引退ライブ（本校）</p>
+        <p class="p-schedule">8月8日(土)</p>
+        <p class="content left">大阪音楽大学　第3回ポピュラー・ミュージック・フェスティバル　本選</p>
+        <p class="p-schedule">8月12日(水)</p>
+        <p class="content left">北播地区３校合同ライブ（播磨中央公園野外ステージ　参加校：西脇・三木）</p>
+        <p class="p-schedule">9月21日(月)</p>
+        <p class="content left">第62回ソニックHSライブ</p>
+        <p class="p-schedule">9月22日(日)</p>
+        <p class="content left">兵庫県総合文化祭合同発表会代表選考会</p>
+        <p class="p-schedule">11月7日(土)</p>
+        <p class="content left">北播地区３校合同ライブ（播磨中央公園野外ステージ　参加校：西脇・三木）</p>
+        <p class="p-schedule">11月17日(火)</p>
+        <p class="content left">文化部中間発表（本校蜻蛉ホール）</p>
+        <p class="p-schedule">11月21日(土)</p>
+        <p class="content left">兵庫県総合文化祭合同発表会（神戸ハーバーランド スペースシアター）</p>
+        <p class="p-schedule">12月19日(火)・20日(日)</p>
+        <p class="content left">第63回ソニックHSライブ</p>
+        <p class="p-schedule">12月25日(金)</p>
+        <p class="content left">校内ライブ</p>
+        <p class="p-schedule">2月14日(火)</p>
+        <p class="content left">第2回近畿北陸高等学校軽音楽コンテスト（舞鶴総合文化会館大ホール）</p>
+        <p class="content left">→緊急事態宣言により中止。出演予定だった楽曲を公開しております。</p>
+        <p class="content left">74回生　ヴァネロペ　「Unupload」（オリジナル曲）</p>
+        <div class="youtube youtube-width-schedule">
+          <iframe width="549" height="309" src="https://www.youtube.com/embed/CKuXgCNdXZg" title="ヴァネロペ／兵庫県立小野高等学校（演奏曲：Unupload／オリジナル曲）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="p-schedule">3月27日(土)</p>
+        <p class="content left">北播地区合同ライブ（播磨中央公園野外ステージ　参加校：西脇・三木・三木北）</p>
+        <p class="p-schedule">3月31日(水)</p>
+        <p class="content left">西播磨地区合同ライブ（姫路あいメッセホール）</p>
+      </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="../header.js"></script>
+</body>
+</html>

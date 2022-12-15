@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../loading.js"></script>
+    <script type="text/javascript" src="../leap_button.js"></script>
+    <link rel="shortcut icon" href="../icon.ico">
+    <title>美術部</title>
+</head>
+<body>
+
+
+      <!-------------------------shutter animation---------------------------------->
+      <div id="loader" class="shutter_1">
+        <div id="cloud"></div>
+        <div id="eclipse"></div>
+      </div>
+      <!-------------------------Pageleap animation---------------------------------->
+      <div id="page_top">
+        <a id="leap_a" href="#">
+            <div class="fluid"></div>
+        </a>
+      </div>
+    <!--------------------------------header--------------------------------------->
+    <header>
+      <div class="header">
+        <div class="border PC">
+        <div class="width width_padding PC">
+          <div class="header__flex PC">
+            <a class="PC" href="../index.html">
+              <img alt="No Image" id="logo" src="../navbar_logo.png">
+            </a>
+              <nav class="PC">
+                <ul class="PC">
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">受験生</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">在校生</li></div_hamburger>
+                  </a>
+                  <a class="a_header PC" href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">卒業生</li></div_hamburger>
+                  </a>
+                  <a class="PC"  href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">保護者</li></div_hamburger>
+                  </a>
+                  <a class="PC"  href="./PC.html">
+                    <div_hamburger class="a_PC PC" href="#"><li class="PC">同窓会</li></div_hamburger>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </div>
+          <div class="width PC">
+            <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                <nav class="PC">
+                  <ul class="PC">
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">学校紹介</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">教育内容</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">食堂営業</li></div_hamburger>
+                    </a>
+                    <a class=" PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">学校生活</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">探究活動</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">国際交流</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">進路状況</li></div_hamburger>
+                    </a>
+                    <a class="a_header PC" href="./PC.html">
+                      <div_hamburger class="a_PC PC" href="#"><li class="PC">事務連絡</li></div_hamburger>
+                    </a>
+                  </ul>
+                </nav>
+            </div> <!--------------------------------------------display none------------------------->
+            <div class="header_animation_indent"></div>
+      </div>
+      <!-------------------------------------hamburger ect...----------------------------------------------------------->
+      <a class="mobile logo_mobile" href="./PC.html">
+        <img alt="No Image" class="mobile logo_mobile" src="./navbar_logo.png">
+      </a>
+        <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+        <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+        <nav class="nav_mobile mobile">
+          <ul class="pt-5 ul_mobile">
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">受験生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">在校生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">卒業生</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">保護者</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/">蜻蛉会</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">学校紹介</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">教育内容</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">食堂営業</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">探究活動</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">国際交流</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">進路状況</a></li>
+            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">事務連絡</a></li>
+          </ul>
+        </nav>
+  </header>
+<!--------------------------------main------------------------------------->
+    <div class="top">
+        <section>
+          <img alt="No Image" id="title-img" src="./title.png">
+        </section>
+    </div>
+
+    <div class="width">
+      <h1 class="sub-title">メッセージ</h1>
+      <p class="content left">
+        油彩画、水彩画、立体造形、映像、デジタルイラスト、漫画など好きな分野で制作します。
+      </p>
+      <h1 class="sub-title">部活内容</h1>
+      <div class="div-schedule">
+        <p class="content left">
+          私たち美術部は、全国総文14年連続出場中で、その他全国レベルの公募展で多数受賞するなどがんばっています。
+          活動は、好きなものを個々のペースで楽しく制作しています。 
+        </p>
+        <u class="sub-sub-title center">1年間の主な活動 </u>
+        <p class="content left">三校展(小野・西脇・社高校美術部の合同展覧会)</p>
+        <p class="content left">蜻蛉祭</p>
+        <p class="content left">合宿</p>
+        <p class="content left">兵庫県総合文化祭</p>
+        <p class="content left">全国公募展などに出品</p>
+      </div>
+
+      <h1 class="sub-title">部員数</h1>
+      <div class="div-schedule">
+        <p class="content center">全１５名</p>
+        <p class="content center">１年生　５名</p>
+        <p class="content center">２年生　８名</p>
+        <p class="content center">３年生　２名</p>
+      </div>
+
+      <ul class="ul">
+        <li class="li">
+          <img alt="No Image" class="img-li" src="./33art_01.jpg">
+        </li>
+        <li class="li">
+            <img alt="No Image" class="img-li" src="./33art_02.jpg">
+        </li>
+        <li class="li">
+            <img alt="No Image" class="img-li" src="./33art_03.jpg">
+        </li>
+      </ul>
+
+      
+    </div>
+
+
+
+    <h1 class="sub-title">主な受賞歴</h1>
+
+    <section class="container_event">
+      <div class="container__wrapper_event">
+
+        <a href="##" class="js-modal-open card_event" data-target="modal01">
+          <div class="card_event picture01"></div>
+        </a>
+        <a href="##" class="js-modal-open card_event" data-target="modal02">
+          <div class="card_event picture02"></div>
+        </a>
+        <a href="##" class="js-modal-open card_event" data-target="modal03">
+          <div class="card_event picture03"></div>
+        </a>
+        <a href="##" class="js-modal-open card_event" data-target="modal04">
+          <div class="card_event picture04"></div>
+        </a>
+        <a href="##" class="js-modal-open card_event" data-target="modal05">
+          <div class="card_event object01"></div>
+        </a>
+  
+      </div>
+    </section>
+    <!-- <div class="body">
+      <div class="carousel">
+        <figure>
+          <a href="##" class="js-modal-open pmd_1_root" data-target="modal01">
+            <img src="./picture01.png" alt="">
+          </a>
+          <a href="##" class="js-modal-open pmd_2_root" data-target="modal02">
+            <img src="./picture02.png" alt="">
+          </a>
+          <a href="##" class="js-modal-open pmd_3_root" data-target="modal03">
+            <img src="./picture03.png" alt="">
+          </a>
+          <a href="##" class="js-modal-open pmd_4_root" data-target="modal04">
+            <img src="./picture04.png" alt="">
+          </a>
+          <a href="##" class="js-modal-open pmd_5_root" data-target="modal05">
+            <img src="./object01.png" alt="">
+          </a>
+        </figure>
+        <nav>
+          <button class="nav prev">Prev</button>
+          <button class="nav next">Next</button>
+        </nav>
+      </div>
+    </div> -->
+
+    <p class="caution">作品をクリックすると詳細情報を見ることができます。</p>
+
+    <!----------------------------------modal window----------------------------------------------------->
+    <div id="modal01" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">無題</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./picture01.png">
+              </div>
+              <div class="year-cover-other">
+                <u class="u">制作: 74回生　多鹿 咲姫</u>
+              </div>
+              <br>
+              <div class="div-schedule">
+                <p class="p-schedule">第34回　全国 WE LOVE トンボ絵画コンクール</p>
+                <p class="content left">環境大臣賞</p>
+                <p class="p-schedule">令和元年度</p>
+                <p class="content left">兵庫県ゆずりは賞受賞</p>
+              </div>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal02" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">無題</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./picture02.png">
+              </div>
+              <div class="year-cover-other">
+                <u class="u">制作: 74回生　桐藤　結衣</u>
+              </div>
+              <br>
+              <div class="div-schedule">
+                <p class="p-schedule">第34回　全国 WE LOVE トンボ絵画コンクール</p>
+                <p class="content left">銅賞</p>
+              </div>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal03" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">希求</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./picture03.png">
+              </div>
+              <div class="year-cover-other">
+                <u class="u">制作: 73回生　成瀬　有華</u>
+              </div>
+              <br>
+              <div class="div-schedule">
+                <p class="p-schedule">2019年度　第43回兵庫県高等学校総合文化祭美術工芸部門</p>
+                <p class="content left">絵画部門　特選(全国大会推薦賞)</p>
+                <p class="p-schedule">2020年度　第44改全国高等学校総合文化祭美術工芸部門　高知大会</p>
+                <p class="content left">絵画部門　文化連盟賞</p>
+                <u class="sub-sub-title left">作品コメント</u>
+                <p class="content left">
+                  その時心の中に強くあった「多くの方に見てもらいたい」
+                  という気持ちや、自分の目指したい夢を光で表現しました。
+                  見る側である正面を高原にしています。
+                </p>
+              </div>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal04" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">The 腕自慢</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./picture04.png">
+              </div>
+              <div class="year-cover-other">
+                <u class="u">制作: 74回生　吉岡　佳祐</u>
+              </div>
+              <br>
+              <div class="div-schedule">
+                <p class="p-schedule">2019年度　第43回兵庫県高等学校総合文化祭美術工芸部門</p>
+                <p class="content left">絵画部門　特選(全国大会推薦賞)</p>
+                <p class="p-schedule">2020年度　第44回全国高等学校総合文化祭美術工芸部門　高知大会</p>
+                <p class="content left">絵画部門　文化連盟賞</p>
+              </div>
+              <u class="sub-sub-title left">作品コメント</u>
+              <p class="content left">
+                ここには、俺こそが一番と自称する者たちが集まる。
+                小さな空間で行われるのは、筋力と知力と体力と精神力の
+                勝負。さあ、腕相撲の一番を決めようじゃないか。
+              </p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal05" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
+      </div>
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">細流に揺蕩う</div>
+            <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp"></div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+
+              <div class="img_div">
+                <img alt="No Image" id="Outline_img" src="./object01.png">
+              </div>
+              <div class="year-cover-other">
+                <u class="u">制作: 74回生　中山　響輝</u>
+                <br>
+                <u class="u">&emsp;&emsp;&nbsp;&nbsp;74回生　貝原　杏実</u>
+                <br>
+                <u class="u">&emsp;&emsp;&nbsp;&nbsp;共同制作</u>
+              </div>
+              <br>
+              <div class="div-schedule">
+                <p class="p-schedule">2019年度　第43回兵庫県高等学校総合文化祭美術工芸部門</p>
+                <p class="content left">立体造形部門　特選(全国大会推薦賞)</p>
+                <p class="p-schedule">2020年度　第44回全国高等学校総合文化祭美術工芸部門　高知大会</p>
+                <p class="content left">立体造形部門　文化連盟賞</p>
+              </div>
+              <u class="sub-sub-title left">作品コメント</u>
+              <p class="content left">
+                高億に入学してから複雑な心境になることや、様々な感情を抱くことが多くなった。
+                そんな葛藤を、複数の顔を持つ生命体で表現しようと試みました。
+              </p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------modal window----------------------------------------------------->
+
+
+    <div class="width">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="year-cover">
+        <u class="u">2019年</u>
+      </div>
+      <br>
+      <div class="div-schedule">
+        <p class="p-schedule">兵庫県展</p>
+        <p class="content left">入選２名</p>
+        <p class="p-schedule">全国高等学校総合文化祭　佐賀大会</p>
+        <p class="content left"> 	美術・工芸部門　絵画部門　文化連盟賞</p>
+        <p class="content left">立体造形部門　文化連盟賞</p>
+      </div>
+  
+      <br>
+      <br>
+      <div class="year-cover">
+        <u class="u">2018年</u>
+      </div>
+      <br>
+      <div class="div-schedule">
+        <p class="p-schedule">兵庫県高等学校総合文化祭</p>
+        <p class="content left">美術・工芸部門　 特選</p>
+        <p class="content left">絵画部門 立体造形部門　優秀賞</p>
+        <p class="p-schedule">全日本デザイン・イラスト大賞展</p>
+        <p class="content left">佳作</p>
+        <p class="p-schedule">全国高等学校総合文化祭　佐賀大会</p>
+        <p class="content left">美術・工芸部門、絵画部門　文化連盟賞</p>
+      </div>
+  
+      <br>
+      <br>
+      <div class="year-cover">
+        <u class="u">その他</u>
+      </div>
+      <br>
+      <div class="div-schedule">
+        <p class="content left">「神戸電鉄しんちゃん・てつくん」絵本製作（シリーズ２巻）小野図書館などで貸し出し中</p>
+        <p class="content left">小野高校マスコットキャラクター「らいおのん」デザイン採用</p>
+        <p class="content left">小野市コミュニティーレストラン「誉田の館いろどり(下東条)」パンフレット製作</p>
+        <p class="content left">小野市の熨斗デザインコンテスト大賞。デザインした熨斗が小野市各店舗で使用されました。</p>
+      </div>
+    </div>
+
+
+
+
+      <!--Daily Life modal js start-->
+  <script>
+    // モーダルウィンドウを開く
+    $('.js-modal-open').on('click', function(){
+      var target = $(this).data('target');
+      var modal = document.getElementById(target);
+      scrollPosition = $(window).scrollTop();
+
+      $('body').addClass('fixed').css({'top': -scrollPosition});
+      $(modal).fadeIn();
+      return false;
+    });
+
+    // モーダルウィンドウを閉じる
+    $('.js-modal-close').on('click', function(){
+      $('body').removeClass('fixed');
+      window.scrollTo( 0 , scrollPosition );
+      $('.js-modal').fadeOut();
+      return false;
+    });
+  </script>
+  <!--Daily Life modal js END-->
+    <script type="text/javascript" src="../header.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../loading.js"></script>
+  <script type="text/javascript" src="../leap_button.js"></script>
+  <link rel="shortcut icon" href="../icon.ico">
+  <title>水泳部</title>
+</head>
+
+<body>
+
+
+  <!-------------------------shutter animation---------------------------------->
+  <div id="loader" class="shutter_1">
+    <div id="cloud"></div>
+    <div id="eclipse"></div>
+  </div>
+  <!-------------------------Pageleap animation---------------------------------->
+  <div id="page_top">
+    <a id="leap_a" href="#">
+      <div class="fluid"></div>
+    </a>
+  </div>
+  <!--------------------------------header--------------------------------------->
+  <header>
+    <div class="header">
+      <div class="border PC">
+        <div class="width width_padding PC">
+          <div class="header__flex PC">
+            <a class="PC" href="../index.html">
+              <img alt="No Image" id="logo" src="../navbar_logo.png">
+            </a>
+            <nav class="PC">
+              <ul class="PC">
+                <a class="a_header PC" href="./PC.html">
+                  <div_hamburger class="a_PC PC" href="#">
+                    <li class="PC">受験生</li>
+                  </div_hamburger>
+                </a>
+                <a class="a_header PC" href="./PC.html">
+                  <div_hamburger class="a_PC PC" href="#">
+                    <li class="PC">在校生</li>
+                  </div_hamburger>
+                </a>
+                <a class="a_header PC" href="./PC.html">
+                  <div_hamburger class="a_PC PC" href="#">
+                    <li class="PC">卒業生</li>
+                  </div_hamburger>
+                </a>
+                <a class="PC" href="./PC.html">
+                  <div_hamburger class="a_PC PC" href="#">
+                    <li class="PC">保護者</li>
+                  </div_hamburger>
+                </a>
+                <a class="PC" href="./PC.html">
+                  <div_hamburger class="a_PC PC" href="#">
+                    <li class="PC">同窓会</li>
+                  </div_hamburger>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="width PC">
+        <div class="header__flex PC">
+          <!-------------------------------------display none----------------------------->
+          <nav class="PC">
+            <ul class="PC">
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">学校紹介</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">教育内容</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">食堂営業</li>
+                </div_hamburger>
+              </a>
+              <a class=" PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">学校生活</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">探究活動</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">国際交流</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">進路状況</li>
+                </div_hamburger>
+              </a>
+              <a class="a_header PC" href="./PC.html">
+                <div_hamburger class="a_PC PC" href="#">
+                  <li class="PC">事務連絡</li>
+                </div_hamburger>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <!--------------------------------------------display none------------------------->
+        <div class="header_animation_indent"></div>
+      </div>
+      <!-------------------------------------hamburger ect...----------------------------------------------------------->
+      <a class="mobile logo_mobile" href="./PC.html">
+        <img alt="No Image" class="mobile logo_mobile" src="./navbar_logo.png">
+      </a>
+      <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon" />
+      <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+      <nav class="nav_mobile mobile">
+        <ul class="pt-5 ul_mobile">
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">受験生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">在校生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">卒業生</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">保護者</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/"
+             >蜻蛉会</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">学校紹介</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">教育内容</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">食堂営業</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">探究活動</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">国際交流</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="#">進路状況</a></li>
+          <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html">事務連絡</a></li>
+        </ul>
+      </nav>
+  </header>
+  <!--------------------------------main------------------------------------->
+  <div class="top">
+    <section>
+      <img alt="No Image" id="title-img" src="./title.png">
+    </section>
+  </div>
+
+  <div class="width">
+    <h1 class="sub-title">メッセージ</h1>
+    <p class="content left">
+      生徒が主体となり、活動することで、自分でよく考え、自主的に取り組んでいます。仲間同士で指摘し、支え合い、高め合っています。
+    </p>
+    <h1 class="sub-title">部活内容</h1>
+    <div class="div-schedule">
+      <p class="content left">週５日(日・月曜日休み) </p>
+      <p class="content left">5～9月は学校のプールで、10～3月は学校近くのアルゴ室内プールにて活動 </p>
+    </div>
+
+    <h1 class="sub-title">部員数</h1>
+    <div class="div-schedule">
+      <p class="content center">全２３名</p>
+      <p class="content center">１年生　６名</p>
+      <p class="content center">２年生　７名</p>
+      <p class="content center">３年生　１０名</p>
+    </div>
+
+    <ul class="ul">
+      <li class="li">
+        <img alt="No Image" class="img-li" src="./14swimming_01.jpg">
+      </li>
+      <li class="li">
+        <img alt="No Image" class="img-li" src="./14swimming_02.jpg">
+      </li>
+      <li class="li">
+        <img alt="No Image" class="img-li" src="./14swimming_03.jpg">
+      </li>
+    </ul>
+
+    <h1 class="sub-title">これまでの主な戦績</h1>
+    <div class="year-cover">
+      <u class="u">令和3年度</u>
+    </div>
+    <br>
+    <div class="div-schedule">
+      <p class="p-schedule">近畿高等学校 新人水泳競技大会　(10月)</p>
+      <p class="content left">女子200m個人メドレー・男子100mバタフライ　２名が出場予定</p>
+      <p class="content left">タイム決勝　総合第２位</p>
+      <p class="p-schedule">兵庫県高等学校ジュニア選手権水泳競技大会　(9月)</p>
+      <p class="content left">女子200m個人メドレー　タイム決勝 総合第３位</p>
+      <p class="content left">男子100mバタフライ　タイム決勝 総合第３位　(近畿大会出場決定)</p>
+      <p class="p-schedule">日本高等学校選手権水泳競技大会　(８月)　インターハイ</p>
+      <p class="content left">女子200m背泳ぎ　タイム決勝　総合18位</p>
+      <p class="p-schedule">近畿高等学校選手権水泳競技大会　(７月)　近畿総体</p>
+      <p class="content left">女子200m背泳ぎ　タイム決勝　総合第２位</p>
+      <p class="content left">女子200m個人メドレー　タイム決勝　総合第12位</p>
+      <p class="content left">男子100mバタフライ　タイム決勝　総合第３位　(女子１名インターハイ出場決定)</p>
+      <p class="p-schedule">兵庫県高等学校選手権水泳競技大会　(６月)　県総体</p>
+      <p class="content left">女子200m背泳ぎ　タイム決勝　総合第１位</p>
+      <p class="content left">女子200m個人メドレー　タイム決勝　総合第３位</p>
+      <p class="content left">男子100mバタフライ　タイム決勝　総合第７位　(男女各１名近畿総体出場決定)</p>
+    </div>
+
+    <br>
+    <br>
+    <div class="year-cover">
+      <u class="u">令和2年度</u>
+    </div>
+    <br>
+    <div class="div-schedule">
+      <p class="p-schedule">近畿高等学校 新人水泳競技大会　(10月)</p>
+      <p class="content left">男子100mバタフライ　１名が出場</p>
+      <p class="p-schedule">兵庫県高等学校ジュニア選手権水泳競技大会　(9月)</p>
+      <p class="content left">男子100mバタフライ　タイム決勝　総合第５位　(近畿大会出場決定)</p>
+    </div>
+
+    <br>
+    <br>
+    <div class="year-cover">
+      <u class="u">令和元年度</u>
+    </div>
+    <br>
+    <div class="div-schedule">
+      <p class="p-schedule">近畿高等学校 新人水泳競技大会　(10月)</p>
+      <p class="content left">男子50m自由形・男子50m平泳ぎ・女子50mバタフライ　３名が出場</p>
+      <p class="p-schedule">兵庫県高等学校ジュニア選手権水泳競技大会　(9月)</p>
+      <p class="content left">男子50m自由形　B決勝　第１位　(総合９位)　(近畿大会出場決定)</p>
+      <p class="content left">男子50m平泳ぎ　B決勝　第３位　(総合１１位)　(近畿大会出場決定)</p>
+      <p class="content left">女子50mバタフライ　決勝　総合第７位　(近畿大会出場決定)</p>
+      <p class="p-schedule">東播高等学校総体水泳競技大会　(8月)</p>
+      <p class="content left">男子50m自由形　第２位</p>
+      <p class="content left">男子50mバタフライ　第１位</p>
+      <p class="content left"> 	女子100mバタフライ　第１位</p>
+      <p class="content left">女子200mバタフライ　第２位</p>
+      <p class="p-schedule">東播地区招待高等学校水泳競技大会　(6月)</p>
+      <p class="content left">男子50m自由形　第１位</p>
+      <p class="content left">男子100m自由形　第３位</p>
+      <p class="content left">女子100mバタフライ　第１位</p>
+      <p class="content left">女子200m自由形　第３位</p>
+      <p class="p-schedule">東播オープン春季水泳競技大会　(5月)</p>
+      <p class="content left">男子50m自由形　第２位</p>
+      <p class="content left">男子50mバタフライ　第２位</p>
+      <p class="content left">男子100m自由形　第３位</p>
+      <p class="content left">女子50m平泳ぎ　第１位</p>
+      <p class="content left">女子50m平泳ぎ　第３位</p>
+      <p class="content left">女子200m平泳ぎ　第２位</p>
+      <p class="content left">女子200m背泳ぎ　第３位</p>
+      <p class="content left">女子50mバタフライ　第３位</p>
+      <p class="content left">女子100mバタフライ　第２位</p>
+      <p class="content left">女子100m個人ﾒﾄﾞﾚｰ　第３位</p>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="../header.js"></script>
+</body>
+
+</html>
