@@ -32,6 +32,7 @@ rmdir /s /q .git
 rmdir /s /q mirror_erea
 git clone https://github.com/Myxogastria0808/TestOHS-main.git
 cd TestOHS-main
+rmdir /s /q archive-edit-place
 rmdir /s /q announcement
 rmdir /s /q audio
 rmdir /s /q business

@@ -69,20 +69,32 @@ echo %input_strong%
 pause
 
 if %input_strong%==d (
+    cd /
+    cd %USERPROFILE%/Downloads/
     git clone "https://github.com/Myxogastria0808/TestOHS-main.git/"
 ) else if %input_strong%==e (
-        start https://myxogastria0808.github.io/CodeBox/
+    start https://myxogastria0808.github.io/CodeBox/
 ) else if %input_strong%==u (
     git add .
     git commit -m "%date:~0,10%, %time%"
-    git push origin main
+    git push origin gh-pages
 ) else if %input_strong%==p (
-    cd compression
+    cd img-system/system
     start image.sh
+    echo ---------------------------------------------------------------------------------------------
+    echo ターミナル画面が消えたら、エンターキーを押してください。
+    echo ---------------------------------------------------------------------------------------------
+    pause
+    goto :img
 )  else if %input_strong%==m (
-    cd margin
+    cd img-system/system
     python margin.py
     start image.sh
+    echo ---------------------------------------------------------------------------------------------
+    echo ターミナル画面が消えたら、エンターキーを押してください。
+    echo ---------------------------------------------------------------------------------------------
+    pause
+    goto :img
 ) else if %input_strong%==github (
     start https://github.com/Myxogastria0808/
 ) else if %input_strong%==archive (
@@ -96,6 +108,53 @@ if %input_strong%==d (
 )
 
 exit
+
+rem =================================================================================================
+:img
+set input_img =
+
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo ---------------------------------------------------------------------------------------------
+echo 全ての画像ファイルが圧縮されていることを確認してください。
+echo.
+echo 圧縮後のファイル一覧
+cd ..
+cd ./post-processed-files/
+dir
+echo.
+echo 全ての画像ファイルが圧縮されている場合は、y を入力してください。
+echo.
+echo (y を入力すると終了します。)
+echo.
+echo 圧縮できていない画像ファイルがある場合は、n を入力してください。
+echo.
+echo ※1 n を入力すると画像圧縮を行うためのウェブアプリケーションが表示されます。
+echo.
+echo ※2 画像圧縮ができていない画像に関しては、表示されたウェブアプリケーションで画像圧縮を行ってください。
+echo ---------------------------------------------------------------------------------------------
+
+set /P input_img="ここに入力してください:"
+echo %input_img%
+
+pause
+
+if %input_img%==y (
+    exit
+) else if %input_img%==n (
+    start https://squoosh.app/
+    exit
+) else (
+    goto :img
+)
 
 rem =================================================================================================
 :R
@@ -154,10 +213,20 @@ if %input_recovery%==main (
 
 :double-check
 set input_double-check =
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
 echo --------------------------------------------------------------------------------------------
 echo 本当に、%input_recovery%を削除しますか？
 echo.
-echo 削除する場合は y を、削除しない場合は n を入力してください。
+echo 削除する場合は y を、削除しない場合は n を、終了する場合は e を入力してください。
 echo --------------------------------------------------------------------------------------------
 
 color b0
@@ -168,15 +237,31 @@ echo %input_double-check%
 pause
 
 if %input_double-check%==y (
-    gh repo delete %input_double-check%
-    echo --------------------------------------------------------------------------------------------
-    echo %input_recovery%の削除は、正常に行われました。
-    echo --------------------------------------------------------------------------------------------
-    pause
+    gh repo delete %input_recovery%
+    goto :double-check-return
 ) else if %input_double-check%==n (
     goto :R
+) else if %input_double-check%==e (
+    exit
 ) else (
     goto :double-check
 )
+
+:double-check-return
+set input_double-check-return =
+echo --------------------------------------------------------------------------------------------
+echo 実行結果は、✓ Deleted repository %input_recovery% となっていますか。
+echo.
+echo 上記のログと一致している場合は y を、一致していない場合は n を入力してください。
+echo.
+echo (y を入力すると終了し、n を入力すると削除確認のメニューに戻ります。)
+echo --------------------------------------------------------------------------------------------
+
+color b0
+
+set /P input_double-check-return="ここに入力してください:"
+echo %input_double-check-return%
+
+pause
 
 exit
