@@ -386,7 +386,7 @@ def archive_menu():
             sg.Text('進捗状況', font=('UD デジタル 教科書体 N-R', 10))
         ],
             [
-            sg.ProgressBar(BAR_MAX, orientation='h', size=(41, 20), key='progress')
+            sg.ProgressBar(BAR_MAX, orientation='h', size=(41, 20), key='archive-progress')
         ],
             [
             sg.Text('※ アーカイブの保存が終了すると、自動で別ウィンドウが開きます。', font=('UD デジタル 教科書体 N-R', 10))
@@ -602,15 +602,15 @@ while True:
     window = archive_login_menu()
   elif event == 'archive-save':
     subprocess.run("A.bat", shell=True)
-    window['progress'].update(20)
+    window['archive-progress'].update(20)
     subprocess.run("B.bat", shell=True)
-    window['progress'].update(40)
+    window['archive-progress'].update(40)
     subprocess.run("C.bat", shell=True)
-    window['progress'].update(60)
+    window['archive-progress'].update(60)
     subprocess.run("D.bat", shell=True)
-    window['progress'].update(80)
+    window['archive-progress'].update(80)
     subprocess.run("E.bat", shell=True)
-    window['progress'].update(100)
+    window['archive-progress'].update(100)
     window.close()
     window = archive_edit_menu()
   elif event == 'archive-url':
