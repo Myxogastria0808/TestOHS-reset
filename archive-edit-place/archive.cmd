@@ -74,16 +74,44 @@ cd ..
 rmdir /s /q %date:~0,4%
 git clone https://github.com/Myxogastria0808/TestOHS-archive.git
 start https://myxogastria0808.github.io/CodeBox/
+
+
+
+
+
+:A
+set input_archive =
+
 echo ==================================================================
-echo 以下のURLをコピーして所定の位置に貼り付けてください。
+echo ステップ１　以下のURLをコピーして所定の位置に貼り付けてください。
 echo.
 echo https://github.com/Myxogastria0808/%date:~0,4%.git
 echo.
 echo (参考) 西暦: %date:~0,4%
 echo.
-echo (蜻蛉の軌跡の処理が終了したら、現在のファイル群は全て削除してください。)
+echo ステップ２　編集が終了したら、 u と入力してください。
+echo.
+echo (u と入力すると、蜻蛉の軌跡の更新が行われます。)
 echo ===================================================================
+color b0
+
+set /P input_archive="ここに入力してください:"
+echo %input_archive%
 
 pause
+
+if %input_archive%==u (
+    cd TestOHS-archive
+    git add .
+    git commit -m "%date:~0,4%"
+    git push origin gh-pages
+) else (
+    echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    echo 入力が間違っています。
+    echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    goto :A
+)
+
+
 
 exit
